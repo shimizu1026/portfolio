@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* 共通設定
+----------------------- */
+html {
+    font-size: 100%;
+}
+
+.wapper {
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.work-title {
+    text-align: center;
+}
+
+.work-img {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.work-img img {
+    width: 100%;
+}
+
+.contents__inner {
+    width: 60%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.work-detail,
+.overview,
+.design-detail {
+    margin-top: 50px;
+}
+
+.task {
+    margin-top: 30px;
+}
+
+
+
