@@ -42,7 +42,8 @@
 footer {
     position: relative;
     background-image: url(../images/footer.png);
-    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
 }
 
