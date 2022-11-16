@@ -56,6 +56,11 @@ footer p {
     bottom: 20px;
 }
 
+.thanksmessege {
+    z-index: auto;
+    margin-bottom: 30px;
+}
+
 .sitemap {
     position: absolute;
     right: 100px;
