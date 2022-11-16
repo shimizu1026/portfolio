@@ -99,7 +99,8 @@ h1 img {
 }
 
 .mainvisual-pc {
-    margin-top: 30px;
+    max-width: 300px;
+    /* margin-top: 30px; */
 }
 
 .about-title,
@@ -209,6 +210,7 @@ h1 img {
 
 .skill-box {
     background-color: #CEA4EF;
+    border-radius: 1rem;
     margin-top: 30px;
     padding: 50px 50px;
 }
@@ -282,7 +284,6 @@ h1 img {
 .works-box {
     height: auto;
     background: #F3ADC2;
-    /* opacity: 0.6; */
 }
 
 .works h3 {

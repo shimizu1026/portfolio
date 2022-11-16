@@ -34,7 +34,8 @@ html {
 
 .work-detail,
 .overview,
-.design-detail {
+.design-detail,
+.design-detail h2 {
     margin-top: 50px;
 }
 
