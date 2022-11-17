@@ -5,7 +5,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 100%;
-    background-image: url(../images/paper.png);
+    background-image: url(images/paper.png);
     background-repeat: repeat;
 }
 
@@ -101,7 +101,7 @@ h1 img {
 
 .mainvisual-pc img {
     display: block;
-    width: 70%;
+    width: 80%;
     margin-top: 30px;
 }
 
