@@ -13,6 +13,8 @@ html {
     max-width: 1200px;
     height: auto;
     margin: 0 auto;
+    z-index: 9;
+    
 }
 
 h2 {
@@ -345,6 +347,7 @@ header {
 /* Contact */
 .contact {
     margin-top: 150px;
+    padding-bottom: 500px;
 }
 
 /* form */
@@ -376,4 +379,10 @@ textarea {
     width: 100%;
     max-width: 480px;
     height: 6rem;
+}
+
+/* 共通設定
+----------------------- */
+@media(max-width: 430px) {
+    
 }
