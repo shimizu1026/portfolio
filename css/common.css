@@ -130,3 +130,10 @@ footer p {
     text-decoration: none;
     color: #333;
 }
+
+/* 共通設定
+----------------------- */
+@media(max-width: 430px) {
+    /*gnav*/
+    
+}
