@@ -51,7 +51,7 @@ img {
 /* header */
 header {
     position: relative;
-    /* height: 100vh; */
+    height: 100vh;
     background-image: url(../images/circle.png);
     background-repeat: no-repeat;
     background-position: 0 75px;
@@ -88,11 +88,15 @@ header {
 .top-box {
     margin-top: 200px;
     margin-left: 30px;
+
 }
 
 .top-box p {
     font-size: 1.5rem;
+
 }
+
+
 
 .mainvisual-pc img {
     display: block;
@@ -218,31 +222,9 @@ header {
 }
 
 .rectangle,
-.rectangle2,
-.rectangle3 {
-    background-color: #F9F8F4;
-    margin: 0 auto;
-    height: auto;
-    border-radius: 1rem;
-
-}
-
-.rectangle h3,
-.rectangle2 h3,
-.rectangle3 h3 {
-    padding-top: 50px;
-    padding-left: 50px;
-}
-
-.design-detail,
-.code-detail,
-.rectangle3 p {
-    padding: 0 70px 30px;
-}
-
-.tool-title {
-    padding-left: 70px;
-    margin-bottom: 10px;
+.rectangle2 {
+    display: flex;
+    justify-content: space-between;
 }
 
 .rectangle2 h3 {
@@ -250,31 +232,51 @@ header {
 
 }
 
-.rectangle2 p {
-    padding-left: 70px;
-}
-
-.tool,
-.tool2,
-.tool3 {
-    margin-left: 80px;
-    margin-bottom: 50px;
+.design-tool,
+.design-tool2,
+.design-tool3,
+.design-tool4,
+.code-tool,
+.code-tool2,
+.code-tool3,
+.code-tool4,
+.code-tool5 {
+    background-color: #F9F8F4;
+    border-radius: 1rem;
+    text-align: center;
+    padding-top: 30px;
     padding-bottom: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 
-
-.tool img {
-    width: 10%;
-    padding-right: 20px;
+.design-tool img,
+.design-tool2 img,
+.design-tool3 img,
+.design-tool4 img {
+    width: 70%;
 }
 
-.tool2 img {
-    width: 15%;
-    padding-right: 20px;
+.code-tool img {
+    width: 100%;
 }
 
-.tool3 img {
+.code-tool img {
+    width: 80%;
+}
+
+.office-tool{
+    width: 200px;
+    height: 200px;
+    background-color: #F9F8F4;
+    border-radius: 1rem;
+    /* padding: 30px 30px; */
+    margin-top: 30px;
+}
+
+.office-tool img {
     width: 10%;
 }
 
@@ -297,23 +299,6 @@ header {
 .works p {
     padding-top: 30px;
     margin: 0 50px;
-}
-
-.tab {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 50px;
-}
-
-.tab__list {
-    list-style-type: none;
-    font-size: 20px;
-    margin-left: 30px;
-}
-
-.tab a {
-    text-decoration: none;
-    color: #333;
 }
 
 .site-list,
@@ -420,8 +405,16 @@ footer p{
     h2 {
         font-size: 1rem;
     }
+
+    .about-title::before,
+    .skill-title::before {
+        content: "";
+        width: 52px;
+    }
     /*gnav*/
-    
+    .gnav {
+        display: none;
+    }
     /*about*/
     span {
         font-size: 30px;
@@ -429,14 +422,31 @@ footer p{
         margin-right: 1rem;
     }
 
+    .about {
+        height: auto;
+    }
+
+    
     .about h2 {
         margin-left: -1px;
     }
     
+    .about-box li {
+        text-align: left;
+    }
+
     .about-box {
         display: flex;
         flex-direction: column;
         background-repeat: no-repeat;
+    }
+
+    .about-img {
+        text-align: center;
+    }
+    .about-img img {
+        width: 60%;
+
     }
 
     /*works*/

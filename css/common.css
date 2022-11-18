@@ -10,9 +10,12 @@ html {
 
 /* nav */
 .gnav {
-    display: flex;
-    justify-content: space-between;
     max-width: 1200px;
+    display: flex;
+    display: block;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 100px;
 }
 
 
@@ -113,14 +116,14 @@ html {
     content: '';
     /*絶対配置で線の位置を決める*/
     position: absolute;
-    top: 0;
-    left: 0%;
+    bottom: 0;
+    left: 25%;
     /*線の形状*/
-    width: 100%;
+    width: 50%;
     height: 1.5px;
-    background:#0481A2;
+    background:#333;
     /*アニメーションの指定*/
-    transition: all .4s;
+    transition: all .1s;
     transform: scale(0, 1);/*X方向0、Y方向1*/
     transform-origin: center top;/*上部中央基点*/
 }
@@ -159,6 +162,10 @@ footer p {
 /* 共通設定
 ----------------------- */
 @media(max-width: 430px) {
+    /*メインビジュアル*/
+    .mainvisual
     /*gnav*/
-    
+    .gnav {
+        display: none;
+    }
 }
