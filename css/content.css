@@ -173,4 +173,9 @@ p {
     height: 100px;
 }
 
+.design_pc img,
+.design_sp img {
+    width: 80%;
+}
+
 
