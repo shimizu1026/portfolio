@@ -32,6 +32,7 @@ span {
 
 p {
     font-size: 1.3rem;
+    line-height: 1.7;
 }
 
 /*========= ナビゲーションのためのCSS ===============*/
@@ -159,23 +160,17 @@ p {
     margin-top: 50px;
 }
 
-.task {
-    margin-top: 30px;
-}
-
 .design-detail {
+    margin-top: 50px;
     margin-bottom: 50px;
-}
-
-
-.backbtn {
-    width: 100px;
-    height: 100px;
 }
 
 .design_pc img,
 .design_sp img {
-    width: 80%;
+    width: 65%;
 }
 
-
+.design_box {
+    display: flex;
+    margin-top: 30px;
+}
