@@ -86,19 +86,6 @@ header {
     width: 100%; */
 }
 
-/* .top-box {
-    margin-top: 200px;
-    margin-left: 30px;
-
-} */
-
-.top-box p {
-    font-size: 1.5rem;
-
-}
-
-
-
 .mainvisual-pc img {
     display: block;
     width: 90%;
@@ -392,7 +379,7 @@ footer {
     position: relative;
     z-index: 100;
     height: 180px;
-    background-color: #7FF1EA;
+    background-color: #00AFCC;
 }
 
 /*footer*/
@@ -411,6 +398,7 @@ footer::before {
 
 footer p{
     padding-top: 140px;
+    background-color: #00AFCC;
 }
 
 /* 共通設定
@@ -482,7 +470,6 @@ footer p{
         height: 150px;
         top: -150px;
         left: 0;
-        background-size: cover;
     }
 
 }
