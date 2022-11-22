@@ -362,9 +362,13 @@ textarea {
 
 .topbtn {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 30px;
     z-index: 101;
+}
+
+.topbtn img {
+    width: 80%;
 }
 
 footer {
