@@ -18,7 +18,7 @@
 </head>
 
 <body id="top">
-    <div class="wapper">
+
         <header class="fadeUp">
                 <div class="mainvisual-pc">
                     <img src="images/mainvisual.png" alt="">
@@ -38,7 +38,7 @@
             <div class="about-title fadeUp">
                 <h2><span>About me</span>わたしについて</h2>
             </div>
-            <div class="about-box">
+            <div class="about-box wapper">
                 <ul class="fadeUpTrigger">
                     <li>清水　昭希代 | しみず あきよ</li>
                     <li>1988年、大阪生まれ、広島そだち。</li>
@@ -55,10 +55,11 @@
 
         </section><!-- .about -->
 
-        <section id="skill" class="skill">
-            <div class="skill-title fadeUp">
-                <h2><span>Skill</span>できること</h2>
-            </div>
+        <div class="skill-title fadeUp">
+            <h2><span>Skill</span>できること</h2>
+        </div>
+        <section id="skill" class="skill wapper">
+
             <div class="skill-box">
                 <h3>デザイン</h3>
                 <p class="design-detail">伝えたいことの優先順位、
@@ -109,12 +110,9 @@
             <div class="works-title fadeUp">
                 <h2><span>Works</span>制作物</h2>
             </div>
-
             <img src="images/w-img.png" alt="" width="350px">
             <div class="works-box">
-                <p>ターゲットはどんな人なのか、どこに注目してほしいか、
-                    どうしてこの形や配置なのか、その背景を考えながら作成
-                    したり、観察・分析したりしています。</p>
+                <p>ターゲットはどんな人なのか、どこに注目してほしいか、どうしてこの形や配置なのか、その背景を考えながら作成したり、観察・分析したりしています。</p>
 
                 <h3 id="site">サイト</h3>
                 <div class="site-list">
@@ -187,8 +185,8 @@
         </section><!-- works -->
 
 
-        <section id="contact" class="contact">
-            <h2><span>Contact</span>お問い合わせ</h2>
+        <section id="contact" class="contact wapper">
+            <h2 class="contact-title"><span>Contact</span>お問い合わせ</h2>
             <form action="#">
                 <div class="form-box">
                     <p><label for="name">Full name / 氏名</label></p>
@@ -210,7 +208,6 @@
         <!--  TOPへ上がるボタン-->
         <a href="#top" id="page-top" class="topbtn"><img src="images/top-btn.svg" alt=""></a>
 
-    </div><!-- wapper -->
 
     <footer>
         <nav class="sitemap">
@@ -218,10 +215,10 @@
             <li><a href="#skill">Skill</a></li>
             <li><a href="#works">Works</a></li>
             <li><a href="#contact">Contact</a></li>
-        </nav>
+        </nav><!-- sitemap -->
 
         <p><small>2022 Akiyo Shimizu.All Rights Reserved.</small></p>
-    </footer>
+    </footer><!-- footer -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 

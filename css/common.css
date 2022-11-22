@@ -14,10 +14,8 @@ html {
     display: flex;
     display: block;
     align-items: flex-end;
-    justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 40px;
 }
-
 
 .gnav__list {
     display: flex;
