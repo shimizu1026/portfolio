@@ -277,6 +277,7 @@ header {
 /* Works */
 .works img {
     display: block;
+    max-width: 100%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 10px;
@@ -306,7 +307,6 @@ header {
 .contents {
     display: flex;
     flex-direction: column;
-    width: 300px;
 }
 
 .contents a {
