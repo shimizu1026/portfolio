@@ -50,11 +50,7 @@ img {
 
 /* header */
 header {
-    position: relative;
     height: 100vh;
-    background-image: url(../images/circle.png);
-    background-repeat: no-repeat;
-    background-position: 0 75px;
 }
 
 /* 下から */
@@ -79,18 +75,13 @@ header {
 }
 
 
-.mv {
+.mainvisual-pc {
     margin: 0 auto;
-    /* display: flex;
-    justify-content: space-between;
-    width: 100%; */
 }
 
 .mainvisual-pc img {
-    display: block;
-    width: 90%;
-    margin-top: 70px;
-    /* margin-left: 70px; */
+    width: 80%;
+    margin-top: 50px;
 }
 
 .about-title,
