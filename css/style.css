@@ -89,6 +89,11 @@ header {
 
 }
 
+.title-sp img,
+.mainvisual-sp img {
+    display: none;
+}
+
 .about-title,
 .skill-title,
 .works-title,
@@ -217,15 +222,7 @@ header {
 
 }
 
-.design-tool,
-.design-tool2,
-.design-tool3,
-.design-tool4,
-.code-tool,
-.code-tool2,
-.code-tool3,
-.code-tool4,
-.code-tool5 {
+.tool-layout {
     background-color: #F9F8F4;
     border-radius: 1rem;
     text-align: center;
@@ -236,42 +233,18 @@ header {
     margin-bottom: 50px;
 }
 
-
-.design-tool img,
-.design-tool2 img,
-.design-tool3 img,
-.design-tool4 img {
+.tool-layout img {
     width: 70%;
 }
 
-.code-tool img {
-    width: 100%;
-}
-
-.code-tool img,
-.code-tool2 img,
-.code-tool3 img,
-.code-tool4 img{
-    width: 80%;
-}
-
-.office-tool{
-    max-width: 232px;
-    text-align: center;
+.office-layout {
+    width: 23%;
     background-color: #F9F8F4;
     border-radius: 1rem;
+    text-align: center;
+    padding: 30px 20px;
     margin-top: 30px;
-    padding-right: 100px;
-}
-
-.office-tool img {
-    width: 140%;
-    display: inline-block;
-    margin: 0 auto;
-}
-
-.office-tool p {
-    margin-right: 20px;
+    margin-bottom: 50px;
 }
 
 /* Works */
@@ -285,7 +258,8 @@ header {
 
 .works-box {
     height: auto;
-    background: #F3ADC2;
+    /* background: #F3ADC2; */
+    background-color: rgba(243,173,194,.6);
 }
 
 .works h3 {
@@ -361,6 +335,7 @@ input[type="text"],
 input[type="email"] {
     width: 100%;
     max-width: 240px;
+    height: 2.5rem;
 }
 
 textarea {
@@ -421,6 +396,24 @@ footer p{
         content: "";
         width: 52px;
     }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /*メインビジュアル*/
+    .mainvisual-pc img {
+        display: none;
+    }
+
+    .mainvisual-sp img {
+        display: block;
+    }
+
+    .title-sp {
+        margin-bottom: 30px;
+    }
     /*gnav*/
     .gnav {
         display: none;
@@ -475,29 +468,13 @@ footer p{
     
     }
 
-    .design-tool,
-    .design-tool2,
-    .design-tool3,
-    .design-tool4,
-    .code-tool,
-    .code-tool2,
-    .code-tool3,
-    .code-tool4,
-    .code-tool5 {
+    .tool-layout {
         text-align: center;
         margin-right: 0;
         margin-bottom: 0;
     }
 
-    .design-tool img,
-    .design-tool2 img,
-    .design-tool3 img,
-    .design-tool4 img,
-    .code-tool img,
-    .code-tool2 img,
-    .code-tool3 img,
-    .code-tool4 img,
-    .code-tool5 img, {
+    .tool-layout img {
         width: 35%;
     }
 
@@ -519,6 +496,21 @@ footer p{
     /*contact*/
     .contact {
         padding-bottom: 300px;
+    }
+
+    .form-box {
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 130%;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        height: 2rem;
     }
 
     textarea {
