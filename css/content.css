@@ -153,6 +153,7 @@ p {
     margin: 0 auto;
 }
 
+
 .work-detail,
 .overview,
 .design-detail,
@@ -173,4 +174,5 @@ p {
 .design_box {
     display: flex;
     margin-top: 30px;
+
 }

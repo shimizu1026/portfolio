@@ -80,16 +80,17 @@ header {
 
 
 .mv {
-    display: flex;
+    margin: 0 auto;
+    /* display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100%; */
 }
 
-.top-box {
+/* .top-box {
     margin-top: 200px;
     margin-left: 30px;
 
-}
+} */
 
 .top-box p {
     font-size: 1.5rem;
@@ -100,9 +101,9 @@ header {
 
 .mainvisual-pc img {
     display: block;
-    width: 80%;
+    width: 90%;
     margin-top: 70px;
-    margin-left: 70px;
+    /* margin-left: 70px; */
 }
 
 .about-title,
@@ -263,21 +264,30 @@ header {
     width: 100%;
 }
 
-.code-tool img {
+.code-tool img,
+.code-tool2 img,
+.code-tool3 img,
+.code-tool4 img{
     width: 80%;
 }
 
 .office-tool{
-    width: 200px;
-    height: 200px;
+    max-width: 232px;
+    text-align: center;
     background-color: #F9F8F4;
     border-radius: 1rem;
-    /* padding: 30px 30px; */
     margin-top: 30px;
+    padding-right: 100px;
 }
 
 .office-tool img {
-    width: 10%;
+    width: 140%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.office-tool p {
+    margin-right: 20px;
 }
 
 /* Works */
@@ -314,10 +324,15 @@ header {
     width: 300px;
 }
 
-.site-list img,
-.banner-list img,
-.other-list img {
-    margin: 20px 20px 0;
+.contents a {
+    display: block;
+    margin-right: 20px;
+}
+
+.site-list a,
+.banner-list a,
+.other-list a {
+    display: block;
 }
 
 .site-list p,
