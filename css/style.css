@@ -252,14 +252,15 @@ header {
     display: block;
     max-width: 100%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
 .works-box {
     height: auto;
-    /* background: #F3ADC2; */
     background-color: rgba(243,173,194,.6);
+    padding-bottom: 30px;
+    margin-bottom: 100px;
 }
 
 .works h3 {
@@ -407,6 +408,7 @@ footer p{
         display: none;
     }
 
+    .title-sp img,
     .mainvisual-sp img {
         display: block;
     }
@@ -414,10 +416,12 @@ footer p{
     .title-sp {
         margin-bottom: 30px;
     }
+
     /*gnav*/
     .gnav {
         display: none;
     }
+
     /*about*/
     span {
         font-size: 40px;
@@ -428,6 +432,7 @@ footer p{
 
     .about {
         height: auto;
+        margin-top: 0;
     }
 
     .about-img img {
@@ -438,6 +443,10 @@ footer p{
     .about h2 {
         margin-left: -1px;
     }
+
+    .about ul {
+        background-position: 5px 100px;
+    }
     
     .about-box li {
         text-align: left;
@@ -447,6 +456,7 @@ footer p{
         display: flex;
         flex-direction: column;
         background-repeat: no-repeat;
+        margin-bottom: 100px;
     }
 
     .about-img {
@@ -476,6 +486,10 @@ footer p{
 
     .tool-layout img {
         width: 35%;
+    }
+
+    .office-layout {
+        width: auto;
     }
 
 

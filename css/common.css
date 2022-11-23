@@ -20,6 +20,7 @@ html {
 .gnav__list {
     display: flex;
     list-style-type: none;
+    justify-content: center;
 }
 
 .gnav__list img {
