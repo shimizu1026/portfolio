@@ -347,30 +347,6 @@ textarea {
     height: 6rem;
 }
 
-.top__link {
-    display: none;
-}
-
-.top__link.open {
-    display: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    background: #1a1a1a;
-    color: #F9F8F4;
-    font-size: 1.25rem;
-    text-decoration: none;
-    opacity: 0.8;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 1.3;
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-    z-index: 101;
-}
 
 footer {
     position: relative;
