@@ -161,7 +161,7 @@ header {
 /* about */
 .about {
     height: 100vh;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 
@@ -289,10 +289,17 @@ header {
     margin-right: 20px;
 }
 
+.move {
+    width: 332px;
+    height: 270px;
+    object-fit: contain;
+}
+
 .site-list a,
 .banner-list a,
 .other-list a {
     display: block;
+    margin-left: 20px;
 }
 
 .site-list p,
@@ -300,6 +307,7 @@ header {
 .other-list p {
     text-align: center;
     padding-top: 0;
+
 }
 
 .other-list {
