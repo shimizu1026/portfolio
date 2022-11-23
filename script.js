@@ -1,5 +1,24 @@
 'use strict';
 
+//トップに戻るボタンの設定
+//スクロールイベント
+window.onscroll = function() {
+  //現在位置（スクロール値）の取得
+  const scrollPosition = window.pageYOffset;
+
+  console.log(scrollPosition);
+
+      //scrollPositionの値が300以上の時は#page-topに.openを追加
+      
+  if (scrollPosition >= 400) {
+      document.getElementById('page-top').classList.add('open');
+  }
+      //それ以外の時は#page-topから.openを削除
+  else {
+      document.getElementById('page-top').classList.remove('open');
+  }
+};
+
 // 動きのきっかけとなるアニメーションの名前を定義
 function fadeAnime(){
 

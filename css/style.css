@@ -2,12 +2,6 @@
 
 /* 共通設定
 ----------------------- */
-html {
-    scroll-behavior: smooth;
-    font-size: 100%;
-    background-repeat: repeat;
-}
-
 .wapper {
     max-width: 1200px;
     height: auto;
@@ -167,7 +161,7 @@ header {
 
 .about ul {
     background-image: url(../images/triangle.png);
-    background-position: 100px 50px;
+    background-position: 100px 35px;
 }
 
 .about-img {
@@ -353,17 +347,29 @@ textarea {
     height: 6rem;
 }
 
-
-.topbtn {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 101;
-    opacity: 0.7;
+.top__link {
+    display: none;
 }
 
-.topbtn img {
-    width: 80%;
+.top__link.open {
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background: #1a1a1a;
+    color: #F9F8F4;
+    font-size: 1.25rem;
+    text-decoration: none;
+    opacity: 0.8;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.3;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 101;
 }
 
 footer {
