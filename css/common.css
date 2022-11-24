@@ -118,7 +118,6 @@ footer p {
     
     /*ハンバーガーアイコン*/
     .menu-btn {
-        content: "";
         position: fixed;
         top: 0;
         right: 20px;
@@ -153,20 +152,21 @@ footer p {
         color: #333;
         font-size: 0.6rem;
         text-transform: uppercase;
+        /* transform: rotate(45deg); */
     }
 
     .close span:first-child {
-        transform: rotate(45deg) translate(4px, -5px);
+        transform: rotate(45deg) translate(1px, -1px);
         transform-origin: left top;
     }
 
-    .close span:nth-child(2) {
-        transform: rotate(-45deg) translate(7px, -7px);
+    .close span:nth-of-type(2) {
+        transform: rotate(-45deg) translate(-6px, -1px);
     }
 
-    .close span:last-child {
+    /* .close span:last-child {
         display: none;
-    }
+    } */
 
 
     #gnav {
