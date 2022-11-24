@@ -68,6 +68,3 @@ function fadeAnime(){
       $(window).scroll(function (){
         fadeAnime();/* アニメーション用の関数を呼ぶ*/
       });// ここまで画面をスクロールをしたら動かしたい場合の記述
-
-      //スクロール固定
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
