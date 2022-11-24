@@ -19,6 +19,7 @@ h2 {
 
 span {
     font-size: 3.75rem;
+    letter-spacing: 0.05em;
     opacity: 0.6;
     margin-right: 1rem;
     margin-left: 30px;
