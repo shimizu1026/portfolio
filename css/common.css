@@ -109,7 +109,7 @@ footer p {
 
 /* 共通設定
 ----------------------- */
-@media(max-width: 430px) {
+@media(max-width: 435px) {
     /*gnav*/
     .gnav {
         display: none;
@@ -123,7 +123,7 @@ footer p {
     .menu-btn {
         position: fixed;
         top: 0;
-        right: 20px;
+        right: 45px;
         width: 50px;
         height: 50px;
         display: flex;
@@ -155,7 +155,6 @@ footer p {
         color: #333;
         font-size: 0.6rem;
         text-transform: uppercase;
-        /* transform: rotate(45deg); */
     }
 
     .close span:first-child {
@@ -167,10 +166,9 @@ footer p {
         transform: rotate(-45deg) translate(-6px, -1px);
     }
 
-    /* .close span:last-child {
+    .close span:nth-of-type(2)::after {
         display: none;
-    } */
-
+    }
 
     #gnav {
         display: none;
@@ -179,21 +177,24 @@ footer p {
     #gnav.open {
         display: block;
         position: fixed;
-        top: -90px;
+        top: -50px;
         right: 0;
         /* background-color: rgba(255, 255,255,.8); */
         /* background: rgba(51, 51, 51, .6); */
         background: #F9F8F4;
-        height: 100vh;
         padding: 0 30px;
         z-index: 100;
     }
 
-
     .gnav__list {
-        min-width: 50px;
+        min-width: 360px;
+        min-height: 100vh;
         flex-direction: column;
         margin-top: 85px;
+    }
+
+    .gnav__list img {
+        width: 10%;
     }
 
     .gnav__link {
