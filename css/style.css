@@ -271,7 +271,6 @@ header {
 .banner-list,
 .other-list {
     display: flex;
-    /* flex-wrap: wrap; */
 }
 
 .contents {
