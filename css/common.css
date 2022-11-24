@@ -30,7 +30,7 @@ html {
 .gnav__list {
     display: flex;
     list-style-type: none;
-    justify-content: right;
+    justify-content: flex-end;
     margin-top: 50px;
 }
 
