@@ -243,12 +243,16 @@ header {
 }
 
 /* Works */
+.works-img img {
+    width: 20%;
+    margin: 0 auto;
+}
+
 .works img {
     display: block;
     max-width: 100%;
-    margin: auto;
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .works-box {
@@ -263,14 +267,14 @@ header {
 }
 
 .works p {
-    padding-top: 30px;
-    margin: 0 50px;
+    padding-top: 10px;
 }
 
 .site-list,
 .banner-list,
 .other-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contents {
@@ -493,7 +497,7 @@ footer p{
 }
 
     .works p {
-        padding-top: 10px;
+        padding-top: 5px;
     }
 
 

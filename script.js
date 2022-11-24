@@ -1,5 +1,16 @@
 'use strict';
 
+//ハンバーガーボタンの設定
+document.getElementById('menu-btn').onclick = function(e) {
+  e.preventDefault();
+  //クラス名の付け外し
+  document.getElementById('gnav').classList.toggle('open');
+
+  //クリックイベントが設定されているところに.closeをつけたり外したりする
+  this.classList.toggle('close');
+};
+
+
 //トップに戻るボタンの設定
 //スクロールイベント
 window.onscroll = function() {
@@ -57,3 +68,6 @@ function fadeAnime(){
       $(window).scroll(function (){
         fadeAnime();/* アニメーション用の関数を呼ぶ*/
       });// ここまで画面をスクロールをしたら動かしたい場合の記述
+
+      //スクロール固定
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
