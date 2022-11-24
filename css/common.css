@@ -16,18 +16,22 @@ html {
     display: none;
 }
 
+.menu-btn {
+    display: flex;
+}
+
 .gnav {
-    max-width: 1200px;
     display: flex;
     display: block;
     align-items: flex-end;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .gnav__list {
     display: flex;
     list-style-type: none;
-    justify-content: center;
+    justify-content: right;
+    margin-top: 50px;
 }
 
 .gnav__list img {
@@ -37,7 +41,6 @@ html {
 
 .gnav__item {
     font-size: 1.5rem;
-    margin-left: 100px;
 }
 
 .gnav__link {
