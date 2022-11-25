@@ -257,6 +257,7 @@ header {
 .works-box {
     height: auto;
     background-color: rgba(243,173,194,.6);
+    padding-top: 50px;
     padding-bottom: 30px;
     margin-bottom: 100px;
 }
