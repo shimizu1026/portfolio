@@ -33,6 +33,12 @@ html {
     justify-content: flex-end;
     align-items: flex-end;
     margin-top: 50px;
+
+}
+
+
+.gnav__list:last-child {
+    margin-right: 30px;
 }
 
 .gnav__img {
@@ -47,6 +53,7 @@ html {
 
 .gnav__item {
     font-size: 1.5rem;
+    margin-left: 30px;
 }
 
 .gnav__link {
@@ -56,6 +63,7 @@ html {
     color: #333;
     text-decoration: none;
 }
+
 
 .gnav__link a {
     text-align: center;

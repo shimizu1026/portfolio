@@ -34,11 +34,12 @@ p {
 
 h3 {
     font-size: 25px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 p {
-    font-size: 18px;
+    font-size: 1.1rem;
+    word-wrap: break-word
 }
 
 img {
@@ -78,7 +79,7 @@ header {
 }
 
 .mainvisual-pc img {
-    width: 65%;
+    width: 70%;
     display: block;
     margin: auto;
 
@@ -161,7 +162,7 @@ header {
 
 .about ul {
     background-image: url(../images/triangle.png);
-    background-position: 100px 35px;
+    background-position: 100px 15px;
     width: 60%;
 }
 
@@ -238,7 +239,7 @@ header {
 }
 
 .office-layout {
-    width: 23%;
+    width: 21%;
     background-color: #F9F8F4;
     border-radius: 1rem;
     text-align: center;
@@ -257,7 +258,7 @@ header {
     display: block;
     max-width: 100%;
     margin-top: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .works-box {
@@ -273,16 +274,16 @@ header {
 }
 
 .works-text {
+    font-size: 20px;
     padding-top: 80px;
 }
 
 .contents-text {
-    font-family: 'Sawarabi Mincho', serif;
+    font-size: 1.25rem;
+    text-align: center;
 }
 
 .works p {
-
-    padding-top: 100px;
     padding-left: 20px;
     padding: 0px 20px 0;
 }
@@ -306,7 +307,7 @@ header {
 
 .move {
     width: 332px;
-    height: 270px;
+    height: 243px;
     object-fit: contain;
 }
 
@@ -320,13 +321,18 @@ header {
 .site-list p,
 .banner-list p,
 .other-list p {
-    text-align: center;
+    /* text-align: center; */
     padding-top: 0;
 
 }
 
 .other-list {
     margin-bottom: 100px;
+}
+
+.contents {
+    display: flex;
+    width: 370px;
 }
 
 /* Contact */
