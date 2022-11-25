@@ -34,6 +34,11 @@ html {
     margin-top: 50px;
 }
 
+.gnav__img {
+    width: 80px;
+    height: auto;
+}
+
 .gnav__list img {
     width: 20%;
     margin: auto;
@@ -170,14 +175,10 @@ footer p {
         display: none;
     }
 
-    #gnav {
-        display: none;
-    }
-
     #gnav.open {
         display: block;
         position: fixed;
-        top: -50px;
+        top: 0;
         right: 0;
         /* background-color: rgba(255, 255,255,.8); */
         /* background: rgba(51, 51, 51, .6); */
@@ -190,6 +191,10 @@ footer p {
         min-width: 360px;
         flex-direction: column;
         margin-top: 85px;
+    }
+
+    .gnav__img{
+        width: 10%;
     }
 
     .gnav__list img {
