@@ -377,6 +377,59 @@ footer p{
     background-color: #00AFCC;
 }
 
+    /* 共通設定
+----------------------- */
+@media(max-width: 522px) {
+    .gnav__list {
+        margin-top: 25px;
+    }
+    .gnav__item {
+        font-size: 1rem;
+    }
+
+    /*about*/
+    header {
+        height: auto;
+    }
+
+    .mainvisual-pc {
+        width: 100%;
+    }
+
+    /*about*/
+    .about-box {
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+    }
+
+    .about-img {
+        text-align: center;
+    }
+    .about-img img {
+        width: 60%;
+    }
+
+    /*skill*/
+    .skill-title {
+        margin-top: 100px;
+    }
+
+    /*works*/
+    .site-list,
+    .banner-list,
+    .other-list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+    .site-list a, .banner-list a, .other-list a {
+    display: block;
+    margin: 0 auto;
+}
+}
+
 /* 共通設定
 ----------------------- */
 @media(max-width: 430px) {
@@ -486,13 +539,13 @@ footer p{
 
 
     /*works*/
-    .site-list,
+    /* .site-list,
     .banner-list,
     .other-list {
     display: flex;
     flex-direction: column;
 
-}
+} */
 
     .works p {
         padding-top: 5px;
