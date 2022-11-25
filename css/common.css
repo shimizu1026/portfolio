@@ -151,7 +151,7 @@ footer p {
         content: "MENU";
         position: absolute;
         top: 37px;
-        right: -2px;
+        right: -4px;
         color: #333;
         font-size: 0.6rem;
         text-transform: uppercase;
@@ -202,6 +202,7 @@ footer p {
         padding: .8em 0px .8em 1em;
 
     }
+
 
     /*トップに戻るボタン*/
     .top__link.open {

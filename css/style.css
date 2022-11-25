@@ -265,8 +265,14 @@ header {
     margin-left: 50px;
 }
 
+.works-text {
+    padding-top: 80px;
+}
+
 .works p {
-    padding-top: 10px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding: 0px 20px 0;
 }
 
 .site-list,
@@ -331,7 +337,7 @@ form p {
 input[type="text"],
 input[type="email"],
 textarea {
-    background-color: #fff;
+    background-color: #F9F8F4;
     border: 1px solid #333;
     border-radius: 5px;
     font-size: 1rem;
@@ -380,6 +386,12 @@ footer p{
     /* 共通設定
 ----------------------- */
 @media(max-width: 522px) {
+
+    .mainvisual-pc img {
+        width: 90%;
+        margin: auto;
+    }
+
     .gnav__list {
         margin-top: 25px;
     }
@@ -387,14 +399,10 @@ footer p{
         font-size: 1rem;
     }
 
-    /*about*/
     header {
         height: auto;
     }
 
-    .mainvisual-pc {
-        width: 100%;
-    }
 
     /*about*/
     .about-box {
@@ -428,11 +436,16 @@ footer p{
     display: block;
     margin: 0 auto;
 }
+
+    .works-img img {
+    width: 30%;
+    margin: 0 auto;
+}
 }
 
 /* 共通設定
 ----------------------- */
-@media(max-width: 430px) {
+@media(max-width: 435px) {
     /*共通*/
     h2 {
         font-size: 1rem;
@@ -495,6 +508,7 @@ footer p{
     
     .about-box li {
         text-align: left;
+        margin-left: 15px;
     }
 
     .about-box {
@@ -539,13 +553,9 @@ footer p{
 
 
     /*works*/
-    /* .site-list,
-    .banner-list,
-    .other-list {
-    display: flex;
-    flex-direction: column;
-
-} */
+    .works-title {
+        margin-bottom: 50px;
+    }
 
     .works p {
         padding-top: 5px;
