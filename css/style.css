@@ -162,10 +162,15 @@ header {
 .about ul {
     background-image: url(../images/triangle.png);
     background-position: 100px 35px;
+    width: 60%;
 }
 
 .about-img {
     margin-top: 30px;
+    max-width: 423px;
+}
+.about-img img{
+    width: 80%;
 }
 
 .about-box {
@@ -227,7 +232,8 @@ header {
     margin-bottom: 50px;
 }
 
-.tool-layout img {
+.tool-layout img ,
+.office-layout img{
     width: 70%;
 }
 
@@ -270,7 +276,12 @@ header {
     padding-top: 80px;
 }
 
+.contents-text {
+    font-family: 'Sawarabi Mincho', serif;
+}
+
 .works p {
+
     padding-top: 100px;
     padding-left: 20px;
     padding: 0px 20px 0;
@@ -386,7 +397,7 @@ footer p{
 
     /* 共通設定
 ----------------------- */
-@media(max-width: 522px) {
+@media(max-width: 960px) {
 
     .mainvisual-pc img {
         width: 90%;
@@ -406,10 +417,20 @@ footer p{
 
 
     /*about*/
+    .about {
+        height: auto;
+    }
+
+    .about ul {
+        width: 100%;
+    }
+
+
     .about-box {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         background-repeat: no-repeat;
+        align-items: center;
     }
 
     .about-img {

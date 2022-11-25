@@ -31,6 +31,7 @@ html {
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
+    align-items: flex-end;
     margin-top: 50px;
 }
 
@@ -40,7 +41,7 @@ html {
 }
 
 .gnav__list img {
-    width: 20%;
+    width: 37%;
     margin: auto;
 }
 
