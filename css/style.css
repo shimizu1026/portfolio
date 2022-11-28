@@ -318,6 +318,7 @@ header {
 .works p {
     padding-left: 20px;
     padding: 0px 20px 0;
+    letter-spacing: 0.05em;
 }
 
 .site-list,
@@ -343,7 +344,7 @@ header {
 
 .move {
     width: 332px;
-    height: 243px;
+    height: 270px;
     object-fit: contain;
 }
 
@@ -498,12 +499,15 @@ footer p{
     .works-img img {
     width: 40%;
     margin: 0 auto;
-}
+    
 }
 
 .works img {
     margin-top: 75px;
 }
+
+}
+
 
 /* 共通設定
 ----------------------- */
@@ -632,7 +636,11 @@ footer p{
     }
 
     .contents-text {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+    }
+
+    .move {
+        height: 230px;
     }
 
     /*contact*/
