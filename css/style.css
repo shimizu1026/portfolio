@@ -351,6 +351,9 @@ header {
 .banner-list a,
 .other-list a {
     display: block;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: right;
     margin-left: 20px;
 }
 
@@ -488,11 +491,6 @@ footer p{
     .other-list {
     display: flex;
 
-}
-
-    .site-list a, .banner-list a, .other-list a {
-    display: block;
-    margin: 0 auto;
 }
 
     .works-img img {
@@ -634,7 +632,6 @@ footer p{
     .contents-text {
         font-size: 1.3rem;
     }
-
 
     /*contact*/
     .contact {
