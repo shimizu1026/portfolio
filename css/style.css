@@ -389,6 +389,8 @@ form {
 
 form p {
     margin-top: 50px;
+    margin-bottom: 5px;
+    font-size: 1rem;
 }
 
 input[type="text"],
@@ -640,6 +642,10 @@ footer p{
 
     .form-box {
         width: 100%;
+    }
+
+    form p {
+        font-size: 0.9rem;
     }
 
     input[type="text"],

@@ -173,7 +173,7 @@ footer p {
         content: "MENU";
         position: absolute;
         top: 37px;
-        right: -4px;
+        right: -2px;
         color: #333;
         font-size: 0.6rem;
         text-transform: uppercase;
@@ -208,7 +208,7 @@ footer p {
     .gnav__list {
         min-width: 360px;
         flex-direction: column;
-        margin-top: 85px;
+        margin-top: 50px;
     }
 
     /* .gnav__img{
