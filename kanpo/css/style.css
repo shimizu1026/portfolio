@@ -1,0 +1,582 @@
+@charset "uft-8";
+
+/* 共通設定 */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 100%;
+    color: #2B3137;
+}
+
+.wapper {
+    max-width: 840px;
+    height: auto;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 65px;
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+.gnav__link,
+.about-text,
+.news dt,
+.news dd,
+p {
+    font-size: 1.2rem;
+}
+
+
+.contact-box p {
+    font-size: 0.8rem;
+}
+
+/*メインビジュアル*/
+.mv img{
+    width: 100%;
+}
+
+/*==================================================
+じわっ
+===================================*/
+
+/* ぼかしから出現 */
+.blur{
+    animation-name:blurAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+  }
+  
+  @keyframes blurAnime{
+    from {
+    filter: blur(10px);
+    transform: scale(1.02);
+    opacity: 0;
+    }
+  
+    to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+    }
+  }
+  
+  /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+   
+  .blurTrigger{
+      opacity: 0;
+  }
+  
+
+/* アニメーションの開始を遅らせるCSS*/
+
+.delay-time1{
+    animation-delay: 0.5s;
+    }
+
+
+/*==================================================
+ふわっ
+===================================*/
+
+/* fadeUp */
+
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:1.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+      transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+    }
+    
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+.fadeUpTrigger{
+    opacity: 0;
+}
+
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+h1 img {
+    width: 70%;
+}
+
+.gnav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gnav__link {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.gnav__item {
+    list-style-type: none;
+    margin: 50px 60px 50px 0;
+}
+
+/*==================================================
+　5-3-3 左から右に線が伸びる（下部）
+===================================*/
+.gnav li a{
+    /*線の基点とするためrelativeを指定*/
+	position: relative;
+}
+
+.gnav li.current a,
+.gnav li a:hover{
+	color: #24292E;
+}
+
+.gnav li a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    /*線の形状*/
+    width: 100%;
+    height: 1px;
+    background:#24292E;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: left top;/*左上基点*/
+}
+
+/*現在地とhoverの設定*/
+.gnav li.current a::after,
+.gnav li a:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+
+  
+/* ご挨拶 */
+.about h2 {
+    margin-top: 80px;
+}
+.about-inner {
+    display: flex;
+}
+
+.about-imgbox {
+    width: 70%;
+    margin-right: 40px;
+}
+
+.about-text {
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+.about-box li:first-child {
+    margin-bottom: 10px;
+}
+
+.about p {
+    margin: 30px 0;
+}
+
+/*==================================================
+じわっ
+===================================*/
+
+/* ぼかしから出現 */
+.blur{
+  animation-name:blurAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes blurAnime{
+  from {
+  filter: blur(10px);
+  transform: scale(1.02);
+  opacity: 0;
+  }
+
+  to {
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+  }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+ 
+.blurTrigger{
+    opacity: 0;
+}
+
+/* ご相談について */
+.consultation h2 {
+    margin: 130px 0 65px 0;
+}
+
+.consultation p {
+    line-height: 1.5;
+}
+
+.arrow {
+    display: block;
+    margin: 50px 0 50px 30px;
+}
+
+
+.top {
+    margin-bottom: 23px;
+}
+
+/* ご挨拶 */
+.disease li {
+    text-align: left;
+    font-size: 1.4rem;
+    list-style-type: none;
+    margin: 20px 0;
+
+}
+
+.disease span {
+    text-decoration: underline;
+    text-decoration-color: #EF454A;
+    border-width:1px;
+}
+
+.disease br {
+    display: none;
+}
+
+/* お知らせ */
+.news h2 {
+    margin: 130px 0 65px 0;
+}
+
+.news-text {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #C8C8C8;
+}
+
+dt,
+dd {
+    padding: 15px 0;
+}
+dt {
+    padding-right: 84px;
+}
+
+.news-text:last-child {
+    border-bottom: 1px solid #C8C8C8;
+}
+
+/* お問い合わせ */
+.contact h2 {
+    margin: 130px 0 65px 0;
+}
+
+.contact-box {
+    display: flex;
+
+}
+
+input[type="text"] {
+    margin-left: 74px;
+}
+
+input[type="email"] {
+    margin-left: 79px;
+}
+
+input[type="text"],
+input[type="email"] {
+    border: 1px solid #C8C8C8;
+    width: 723px;
+    height: 43px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    border: 1px solid #C8C8C8;
+    width: 723px;
+    height: 160px;
+}
+
+
+input[type="submit"] {
+    border: 1px solid #24292E;
+    background-color: #24292E;
+    color: #FFFFFF;
+    padding: 17px 85px 15px 86px;
+
+}
+
+.contact p {
+    text-align: center;
+}
+
+.message {
+    margin-right: 47px;
+}
+
+.contact-messege p {
+    text-align: left;
+    padding-left: 120px;
+}
+
+.contact-messege {
+    margin-bottom: 65px;
+}
+
+.btn {
+    margin: 30px 0 130px 0;
+}
+
+    /***追従するトップへ戻るボタン***/
+.top__link {
+    display: none;
+}
+
+.top__link.open {
+    display: block;
+}
+
+
+#page-top {
+    position: fixed;
+    right: 10px;
+    bottom: 60px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: rotate(90deg);
+    font-size: 100%;
+    line-height: 1.5rem;
+    color: #24292E;
+    padding: 0 0 0 50px;
+    border-top: solid 1px;
+}
+#page-top::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 20px;
+    border-top: solid 1px;
+    transform: rotate(35deg);
+    transform-origin: left top;
+}
+
+/***トップへ戻るボタンここまで***/
+
+
+/* footer */
+footer {
+    background-color: #24292E;
+    color: #FFFFFF;
+}
+
+
+footer p {
+    text-align: center;
+    font-size: 10px;
+    padding: 10px 0;
+}
+
+iframe {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+
+/*モバイル版*/
+@media screen and (max-width: 600px) {
+    /* 共通設定 */
+    .wapper {
+        max-width: 315px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+        margin-top: 80px;
+    }
+
+
+    /* header */
+    h1 {
+        margin: 50px 116px 0 116px;
+    }
+
+    h1 img {
+        width: 30%;
+    }
+
+    header {
+        flex-direction: column;
+
+    }
+
+    /* nav */
+    .gnav__list {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .gnav__link {
+        writing-mode: vertical-rl;
+        opacity: 0.8;
+        padding: 10px 0 15px 0;
+
+    }
+
+    .gnav__item {
+        margin-top: 50px;
+        margin-bottom: 15px;
+        margin-right: 20px;
+    }
+    
+    .gnav li a::after {
+        content: '';
+        /*絶対配置で線の位置を決める*/
+        position: absolute;
+        top: 0;
+        left: 5%;
+        /*線の形状*/
+        width: 1px;
+        height: 90%;
+        background:#24292E;
+        /*アニメーションの指定*/
+        transition: all .3s;
+        transform: scale(0, 1);/*X方向0、Y方向1*/
+        transform-origin: left top;/*左上基点*/
+    }
+    
+    /*現在地とhoverの設定*/
+    .gnav li.current a::after,
+    .gnav li a:hover::after {
+        transform: scale(1, 1);/*X方向にスケール拡大*/
+    }
+
+
+    .mainvisual-sp {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    /* ご挨拶 */
+    .about-text {
+        text-align: left;
+    }
+
+    .about-inner {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .about-imgbox {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        margin-top: 20px;
+    }
+
+    
+    .disease li {
+        font-size: 1.3rem;
+    }
+
+    .disease br {
+        display: block;
+    }
+
+    /* ご相談について */
+    .img-box {
+        flex-direction: column;
+    }
+    .bottom {
+        margin-bottom: 23px;
+    }
+
+    .img-box img {
+        width: 345px;
+        height: 225px;
+        align-items: center;
+    }
+
+
+    /* News */
+    dt {
+        padding-bottom: 0;
+    }
+    dd {
+        padding-top: 0;
+    }
+
+    /* お問い合わせ */
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .contact-box p {
+        text-align: left;
+
+    }
+
+    .contact-messege p {
+        padding-left: 0;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 345px;
+        margin-left: 0;
+    }
+
+    textarea {
+        width: 345px;
+        height: 160px;
+    }
+
+    .btn {
+        margin: 30px 0 70px 0;
+    }
+}
