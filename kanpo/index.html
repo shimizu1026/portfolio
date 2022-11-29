@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex,follow">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&display=swap" rel="stylesheet">
+    <!-- slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
     <!-- リセットcss -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
@@ -36,7 +38,14 @@
                     </nav>
                 </div><!-- nav -->
             </header>
-            <div class="mv"><img src="images/mainvisual.jpg" alt=""></div>
+            <ul class="slider">
+                <li class="slider-item slider-item01"></li>
+                <li class="slider-item slider-item02"></li>
+                <li class="slider-item slider-item03"></li>
+                <li class="slider-item slider-item04"></li>
+                <li class="slider-item slider-item05"></li>
+                </ul>
+
         <div class="wapper">
         <section id="about" class="wapper about">
             <h2>ご挨拶</h2>
@@ -108,15 +117,13 @@
 
         </section>
 
-
-
         <section id="contact" class="wapper contact">
             <h2 class="fadeUpTrigge">お問い合わせ</h2>
             <div class="contact-messege fadeUpTrigge">
                 <p>漢方相談は予約制です。</p>
                 <p>電話・メールにて、ご予約をお願いいたします。</p>
                 <p>メールの返信が数日経っても無い場合は、電話にてお問い合わせください。</p>
-                <p>電話番号：082-123-1234</p>
+                <p>電話番号:082-123-XXXX</p>
             </div>
             <form action="#">
                 <div class="contact-box">
@@ -134,8 +141,8 @@
                 <p class="btn"><input type="submit" value="送信"></p>
             </form>
             
-            <p>所在地:広島市中区上八丁堀8番20号 井上ビル4階</p>
-            <p>広電白島線女学院前徒歩2分</p>
+            <p>所在地:広島市中区XXXY番'号 ○○ビル4階</p>
+            <p>広電XX線YY前徒歩2分</p>
             <p>営業時間 / 10:30〜18:30（土のみ17:00まで</p>
             <p>休 / 水･日･祝</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.16668430607!2d132.4614210501921!3d34.39710900683024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355aa3aac14c3677%3A0xe7dd04225567357d!2z44OR44K944Kz44Oz44K544Kv44O844OrSEEqTkEg5YWr5LiB5aCA5qCh!5e0!3m2!1sja!2sjp!4v1668690482815!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -147,10 +154,10 @@
             <p><small>&copy; 2022 漢方薬局はな</small></p>
         </footer>
         
-
+        <!-- slider -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><!-- sliderここまで -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-1/js/3-2-3-1.js"></script>
         
         <script src="script.js"></script>
