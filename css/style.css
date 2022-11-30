@@ -266,11 +266,6 @@ header {
   }
   
 
-
-
-
-
-
 /* Skill */
 .skill {
     margin-top: 10px;
@@ -569,6 +564,10 @@ footer p{
         width: 52px;
     }
 
+    .about-img {
+        margin-top: 50px;
+    }
+
     img {
         display: block;
         margin: 0 auto;
@@ -585,6 +584,7 @@ footer p{
     }
 
     .title-sp {
+        margin-top: 55px;
         margin-bottom: 30px;
     }
 
