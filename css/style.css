@@ -339,7 +339,6 @@ header {
 .works img {
     display: block;
     max-width: 100%;
-    margin-top: 50px;
     margin-bottom: 10px;
 }
 
@@ -755,7 +754,7 @@ footer p{
     .contener {
         max-width: 370px;
         height: auto;
-        margin: 0 auto;
+        margin: 30px auto;
     }/*wapperにいれるとPC版で崩れるため真ん中に持ってくるための設定*/
 
     /*contact*/
