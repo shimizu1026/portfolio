@@ -16,7 +16,7 @@ h2 {
 }
 
 
-span {
+.text-title {
     font-size: 3.75rem;
     letter-spacing: 0.05em;
     opacity: 0.6;
@@ -32,8 +32,9 @@ p {
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 1.6rem;
     margin-top: 50px;
+    letter-spacing: 0.05em;
 }
 
 p {
@@ -71,7 +72,6 @@ header {
         transform: translateY(0);
     }
 }
-
 
 .mainvisual-pc {
     /* margin: 0 auto; */
@@ -118,9 +118,7 @@ header {
 .contact-title {
     display: flex;
     align-items: center;
-    /* 垂直中心 */
     justify-content: left;
-    /* 水平中心 */
 }
 
 .about-title::before,
@@ -216,7 +214,7 @@ header {
 
 .about ul {
     background-image: url(../images/triangle.png);
-    background-position: 100px 15px;
+    background-position: 175px 15px;
     width: 60%;
 }
 
@@ -241,9 +239,7 @@ header {
     margin-left: 50px;
 }
 
-.about li:first-child {
-    margin-top: 70px;
-}
+
 
 /****--------- ふわふわ ---------****/
 .fwari{
@@ -287,20 +283,33 @@ header {
 .rectangle2 {
     display: flex;
     justify-content: space-between;
-
 }
 
 .rectangle2 h3 {
     margin-top: 30px;
+}
 
+.text-layout {
+    background-color: #F9F8F4;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    list-style-type: none;
+    padding: 30px 20px;
+    margin-right: 30px;
+    margin: 30px 30px 50px 0;
+}
+
+.text-bold {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
 }
 
 .tool-layout {
     background-color: #F9F8F4;
     border-radius: 1rem;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 0;
     margin-right: 30px;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -330,7 +339,7 @@ header {
 .works img {
     display: block;
     max-width: 100%;
-    margin-top: 15px;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 
@@ -371,7 +380,9 @@ header {
 
 .contents {
     display: flex;
+    width: 370px;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 .contents a {
@@ -402,18 +413,11 @@ header {
 .site-list p,
 .banner-list p,
 .other-list p {
-    /* text-align: center; */
     padding-top: 0;
-
 }
 
 .other-list {
     margin-bottom: 100px;
-}
-
-.contents {
-    display: flex;
-    width: 370px;
 }
 
 /* Contact */
@@ -435,6 +439,15 @@ form p {
     font-size: 1rem;
 }
 
+.form-box label span {
+    color: #F9F8F4;
+    background-color: #F3ADC2;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    margin-right: 1rem;
+    padding: 2px 5px 3px 5px;;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -449,6 +462,13 @@ input[type="email"] {
     width: 100%;
     max-width: 240px;
     height: 2.5rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    box-shadow: 0 0 7px #333;
+    border: 1px solid #333;
 }
 
 textarea {
@@ -487,16 +507,21 @@ footer p{
     /* 共通設定
 ----------------------- */
 @media(max-width: 960px) {
-
-
+    .wapper {
+        max-width: 845px;
+    }
     .mainvisual-pc img {
         width: 85%;
     }
 
-
     header {
         height: auto;
     }
+
+    .about-title, .skill-title, .works-title, .contact-title {
+        margin-bottom: 60px;
+    }
+
 
 
     /*about*/
@@ -507,6 +532,10 @@ footer p{
     .about ul {
         width: 100%;
         background-position: 270px 36px;
+    }
+
+    .about li:first-child {
+        margin-top: 70px;
     }
 
 
@@ -525,8 +554,21 @@ footer p{
     }
 
     /*skill*/
+    .skill {
+        margin-bottom: 130px;
+    }
+
+    .skill-box h3 {
+        margin-top: 0;
+    }
+
     .skill-title {
         margin-top: 100px;
+    }
+
+    .tool-layout img,
+    .office-layout img {
+        width: 40%;
     }
 
     /*works*/
@@ -534,39 +576,36 @@ footer p{
     .banner-list,
     .other-list {
     display: flex;
-
 }
+    .contents {
+        margin-top: 30px;
+    }
 
     .works-img img {
-    width: 40%;
+    width: 30%;
     margin: 0 auto;
-    
-}
-
-.works img {
-    margin-top: 75px;
 }
 
 }
-
 
 /* 共通設定
 ----------------------- */
 @media(max-width: 435px) {
     /*共通*/
     .wapper {
-        max-width: 370px;
+        max-width: 365px;
     }
 
     h2 {
         font-size: 1rem;
-
     }
 
     .about-title::before,
-    .skill-title::before {
+    .skill-title::before,
+    .works-title::before,
+    .contact-title::before {
         content: "";
-        width: 52px;
+        width: 25px;
     }
 
     .about-img {
@@ -601,7 +640,7 @@ footer p{
     }
 
     /*about*/
-    span {
+    .text-title {
         font-size: 2.5rem;
         opacity: 0.6;
         margin-right: 1rem;
@@ -618,7 +657,7 @@ footer p{
 
     .about-title {
         margin-top: 110px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     
     .about h2 {
@@ -659,8 +698,11 @@ footer p{
 
     /*skill*/
     .skill h3 {
+        margin-top: 20px;
+    }
+
+    .skill h3:first-child {
         margin-top: 0;
-        margin-bottom: 20px;
     }
 
     .rectangle,
@@ -670,10 +712,16 @@ footer p{
     
     }
 
+    .text-layout {
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+
     .tool-layout {
         text-align: center;
+        margin-top: 10px;
         margin-right: 0;
-        margin-bottom: 0;
+        margin-bottom: 30px;
     }
 
     .tool-layout img {
@@ -682,6 +730,7 @@ footer p{
 
     .office-layout {
         width: auto;
+        margin-top: 10px;
     }
 
 
@@ -702,6 +751,12 @@ footer p{
     .move {
         height: 230px;
     }
+
+    .contener {
+        max-width: 370px;
+        height: auto;
+        margin: 0 auto;
+    }/*wapperにいれるとPC版で崩れるため真ん中に持ってくるための設定*/
 
     /*contact*/
     .contact {
