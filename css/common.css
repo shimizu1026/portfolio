@@ -164,8 +164,6 @@ footer p {
 }
 /* ----------------------- */
 @media(max-width: 435px) {
-
-
     /*gnav*/
     .gnav {
         display: none;

@@ -61,7 +61,7 @@ img {
 }
 
 /* header */
-header {
+.mainvisual-pc {
     height: 100vh;
 }
 
@@ -580,14 +580,13 @@ footer p{
         width: 85%;
     }
 
-    header {
+    .mainvisual-pc {
         height: auto;
     }
 
     .about-title, .skill-title, .works-title, .contact-title {
         margin-bottom: 60px;
     }
-
 
 
     /*about*/
