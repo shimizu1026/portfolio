@@ -11,6 +11,14 @@ html {
     background-repeat: repeat;
 }
 
+
+h1 {
+    display: block;
+    width: 8%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
 /* nav */
 .menu {
     display: none;
@@ -164,6 +172,10 @@ footer p {
 }
 /* ----------------------- */
 @media(max-width: 435px) {
+    h1 {
+        display: none;
+    }
+
     /*gnav*/
     .gnav {
         display: none;
