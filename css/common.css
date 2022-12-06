@@ -37,7 +37,6 @@ html {
 
 }
 
-
 .gnav__list:last-child {
     margin-right: 30px;
 }
@@ -174,6 +173,10 @@ footer p {
 
     .menu {
         display: block;
+    }
+
+    .gnav li a::after {
+        display: none;
     }
     
     /*ハンバーガーアイコン*/
