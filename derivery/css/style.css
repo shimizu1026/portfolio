@@ -814,6 +814,10 @@ a.btn-coupon:hover i {
         width: 410px;
     }
 
+    h1 img {
+        width: 65%;
+    }
+
     h2 {
         font-size: 1.5rem;
     }
