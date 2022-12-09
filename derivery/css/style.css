@@ -1,0 +1,938 @@
+@charset "uft-8";
+
+html {
+    font-size: 100%;
+    font-family: "M PLUS Rounded 1c";
+}
+
+.wapper {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFCC99;
+    padding: 10px 0;
+}
+
+h1 {
+    margin-left: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h1 img {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin: 150px 0 90px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*nav*/
+.gnav {
+    display: block;
+}
+
+.gnav__list {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+
+}
+
+.gnav__list:last-child {
+    margin-right: 20px;
+}
+
+.gnav__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 30px;
+
+}
+
+.gnav__link:hover {
+    color: #FFFFE0;
+    opacity: .6;
+}
+
+
+
+
+/*mv*/
+.mv img {
+    width: 100%;
+}
+
+/*detail*/
+.detail {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.detail p {
+    line-height: 1.7;
+    font-size: 1.2rem;
+}
+
+/*comment*/
+.comment {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.comment__imgbox1 {
+    width: 25%;
+}
+
+.comment__imgbox2 {
+    width: 25%;
+    margin-top: 70px;
+}
+.comment__imgbox3 {
+    width: 25%;
+    margin-top: 150px;
+}
+
+.comment img {
+    width: 90%;
+}
+
+/*==================================================
+ふわっ
+===================================*/
+
+
+/* fadeUp */
+
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+      transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+    }
+    
+    
+    /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+     
+    .fadeUpTrigger{
+        opacity: 0;
+    }
+
+.delay-time1 {
+    animation-delay: 0.5s;/*この数字を指定したい遅延時間に変更*/
+  }
+
+.delay-time2 {
+    animation-delay: 1s;/*この数字を指定したい遅延時間に変更*/
+  }
+
+
+
+/*sample*/
+.sample {
+    display: flex;
+    margin-bottom: 180px;
+}
+
+.sample img {
+    width: 60%;
+    max-width: 100%;
+}
+
+.sample p {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    align-items: center;
+    line-height: 1.7;
+    font-size: 1.2rem;
+}
+
+/*==================================================
+じわっ
+===================================*/
+
+/* ぼかしから出現 */
+.blur{
+    animation-name:blurAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+  }
+  
+  @keyframes blurAnime{
+    from {
+    filter: blur(10px);
+    transform: scale(1.02);
+    opacity: 0;
+    }
+  
+    to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+    }
+  }
+  
+  /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+   
+  .blurTrigger{
+      opacity: 0;
+  }
+  
+
+
+
+/*recommendation*/
+.recommendation__imgbox {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.recommendation {
+    background-color: #FFFFE0;
+    padding-bottom: 150px;
+    padding-top: 10px;
+}
+
+.recommendation h2 {
+    margin-top: 50px;
+}
+
+.recommendation img {
+    width: 35%;
+    text-align: center;
+}
+
+.recommendation__img1,
+.recommendation__img2,
+.recommendation__img3 {
+    display: flex;
+
+    margin-left: 80px;
+    align-items: center;
+}
+
+.recommendation p{
+    font-size: 1.2rem;
+    margin-left: 40px;
+}
+
+/*plan*/
+.plan {
+    padding: 0 0 130px 40px;
+    text-align: center;
+}
+
+.plan p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.guide {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 180px;
+}
+
+.guide__couse {
+    border-right: 3px dotted #333;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+.guide__couse:last-child {
+    border-right: none;
+}
+
+h3 {
+    font-size: 2.1rem;
+}
+
+#startbtn {
+    margin-top: 100px;
+}
+
+.offerbtn {
+    font-size: 1.2rem;
+    background-color: #FFCC99;
+    border-radius: 10%;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.offerbtn:hover {
+    opacity: .7;
+    transition: all .3s;
+}
+
+
+.offer__link {
+    background-color: #09893D;
+    border-radius: 100vh;
+    color: #FFFFE0;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 12px 35px;
+}
+
+.offer__link:hover {
+    opacity: 0.6;
+    transition: all .3s;
+}
+
+/* クーポン*/
+/* 背景*/
+.coupon {
+    margin: 90px 200px 20px;
+    padding: 30px;
+    text-align: center;
+    background: #ff943e;
+  }
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-coupon {
+  font-size: 1.5rem;
+  line-height: 1.2;
+
+  padding: 2rem 3rem;
+
+  color: #ff943e;
+  border-radius: 0;
+  background: #fff;
+}
+
+a.btn-coupon i {
+  font-size: 1.6rem;
+  position: absolute;
+  width: 1rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  text-align: right;
+  color: #fff;
+  background: #ff943e;
+}
+
+a.btn-coupon i.fa-position-top {
+  top: -1em;
+  left: 1rem;
+}
+
+a.btn-coupon i.fa-position-bottom {
+  right: 1rem;
+  bottom: -1em;
+  left: auto;
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+a.btn-coupon span {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.2rem;
+  font-style: italic;
+}
+
+a.btn-coupon:before {
+  position: absolute;
+  top: -9px;
+  left: -9px;
+  width: calc(100% + 18px);
+  height: calc(100% + 18px);
+  content: "";
+  border: 2px dashed #fff;
+}
+
+a.btn-coupon:hover {
+  color: #ff943e;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+a.btn-coupon:hover i {
+  width: 90%;
+}
+
+
+/***追従するトップへ戻るボタン***/
+.top__arrow {
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid #FFFFE0;
+    border-right: 3px solid #FFFFE0;
+    transform: translateY(20%) rotate(-45deg);
+}
+
+#page-top {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: rgba(9,137,61,.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+#page-top.UpMove{
+    animation: UpAnime 1s forwards;
+  }
+  @keyframes UpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+  
+  /*　下に下がる動き　*/
+  
+  #page-top.DownMove{
+    animation: DownAnime 1s forwards;
+  }
+  @keyframes DownAnime{
+    from {
+      opacity: 1;
+    transform: translateY(0);
+    }
+    to {
+      opacity: 1;
+    transform: translateY(100px);
+    }
+  }
+  
+
+    /*footer*/
+    footer {
+        background-color: #FFCC99;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    small {
+        font-size: 0.8rem;
+    }
+
+    /*アコーディオン全体*/
+    .accordion-area{
+        list-style: none;
+        width: 96%;
+        max-width: 700px;
+        margin:0 auto;
+    }
+
+    .accordion-area li{
+        margin: 10px 0;
+    }
+
+    .accordion-area section {
+        border: 1px solid #ccc;
+    }
+
+    /*アコーディオンタイトル*/
+    .title {
+        position: relative;/*+マークの位置基準とするためrelative指定*/
+        cursor: pointer;
+        font-size:1.2rem;
+        font-weight: normal;
+        padding: 2% 2% 2% 50px;
+        transition: all .5s ease;
+    }
+
+    /*アイコンの＋と×*/
+    .title::before,
+    .title::after{
+        position: absolute;
+        content:'';
+        width: 15px;
+        height: 2px;
+        background-color: #333;
+        
+    }
+
+    .title::before{
+        top:48%;
+        left: 15px;
+        transform: rotate(0deg);
+        
+    }
+    .title::after{
+        top:48%;
+        left: 15px;
+        transform: rotate(90deg);
+
+    }
+    /*　closeというクラスがついたら形状変化　*/
+    .title.close::before{
+        transform: rotate(45deg);
+    }
+
+    .title.close::after{
+        transform: rotate(-45deg);
+    }
+
+    /*アコーディオンで現れるエリア*/
+    .box {
+        display: none;/*はじめは非表示*/
+        background: #f3f3f3;
+        margin:0 3% 3% 3%;
+        padding: 3%;
+    }
+    
+    /*タブレット版*/
+    @media screen and (max-width: 950px) {
+
+        .wapper {
+            width: 750px;
+        }
+
+        /*==================================================
+    　5-2-6 3本線が回転して×に
+    ===================================*/
+
+    /*ボタン外側*/
+    .openbtn{
+        position: relative;
+        background:#FFFFE0;
+        cursor: pointer;
+        width: 50px;
+        height:50px;
+        border-radius: 50%;
+    }
+
+    /*ボタン内側*/
+    .openbtn span{
+        display: inline-block;
+        transition: all .4s;/*アニメーションの設定*/
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background: #333;
+    }
+
+    .openbtn span:nth-of-type(1) {
+        top:15px;	
+        width: 45%;
+    }
+
+    .openbtn span:nth-of-type(2) {
+        top:23px;
+        width: 35%;
+    }
+
+    .openbtn span:nth-of-type(3) {
+        top:31px;
+        width: 20%;
+    }
+
+    /*activeクラスが付与されると線が回転して×になる*/
+
+    .openbtn.active span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-135deg);
+        width: 30%;
+    }
+
+    .openbtn.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .openbtn.active span:nth-of-type(3){
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(135deg);
+        width: 30%;
+    }
+
+    /*========= ナビゲーションのためのCSS ===============*/
+
+    #gnav{
+        /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+        position:fixed;
+        z-index: -1;
+        opacity: 0;/*はじめは透過0*/
+        /*ナビの位置と形状*/
+        top:0;
+        width:100%;
+        height: 100vh;/*ナビの高さ*/
+        background:#FFCC99;
+        /*動き*/
+        transition: all 0.3s;
+    }
+
+    /*アクティブクラスがついたら透過なしにして最前面へ*/
+    #gnav.panelactive{
+        opacity: 1;
+        z-index:999;
+    }
+
+    /*ナビゲーションの縦スクロール*/
+    #gnav.panelactive {
+        /*ナビの数が増えた場合縦スクロール*/
+        position: fixed;
+        z-index: 999; 
+        width: 100%;
+        height: 100vh;/*表示する高さ*/
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /*ナビゲーション*/
+    #gnav ul {
+        display: none;
+        /*ナビゲーション天地中央揃え*/
+        position: absolute;
+        z-index: 999;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+    #gnav.panelactive ul {
+        display: block;
+    }
+
+    /*リストのレイアウト設定*/
+
+    #gnav li{
+        list-style: none;
+        text-align: center; 
+    }
+
+    #gnav li a{
+        color: #333;
+        text-decoration: none;
+        padding:10px;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+    }
+
+    /*========= ボタンのためのCSS ===============*/
+    .openbtn{
+        position:fixed;
+        z-index: 9999;/*ボタンを最前面に*/
+        top:10px;
+        right: 10px;
+        cursor: pointer;
+        width: 50px;
+        height:50px;
+    }
+        
+    /*×に変化*/	
+    .openbtn span{
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #666;
+        width: 45%;
+    }
+
+    .openbtn span:nth-of-type(1) {
+        top:15px;	
+    }
+
+    .openbtn span:nth-of-type(2) {
+        top:23px;
+    }
+
+    .openbtn span:nth-of-type(3) {
+        top:31px;
+    }
+
+    .openbtn.active span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+
+    .openbtn.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .openbtn.active span:nth-of-type(3){
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+
+    /*comment*/
+    .comment {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .comment img {
+        width: 90%;
+        padding-bottom: 70px;
+    }
+
+    .comment__imgbox1,
+    .comment__imgbox2,
+    .comment__imgbox3 {
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    /*sample*/
+    .sample {
+        display:block;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sample p {
+        margin-top: 30px;
+    }
+
+    /*recommendation*/
+    .recommendation__imgbox {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .recommendation {
+        padding-bottom: 30px;
+    }
+
+    .recommendation img {
+        width: 15%;
+    }
+
+    .recommendation__img1,
+     .recommendation__img2,
+      .recommendation__img3 {
+        flex-direction: column;
+        margin-left: 0px;
+        margin-bottom: 90px;
+        align-items: center;
+    }
+
+    .guide {
+        flex-direction: column;
+    }
+
+    .guide__couse {
+        position: relative;
+        border-right: none;
+        padding: 65px 30px;
+    }
+
+    .guide__couse::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -15px;/*線の上下位置*/
+        display: inline-block;
+        border-bottom: 3px dotted #333;
+        width: 300px;/*線の長さ*/
+        height: 5px;/*線の太さ*/
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);/*位置調整*/
+    }
+
+    .guide__couse:last-child::before {
+        border-bottom: none;
+    }
+
+}
+
+/*モバイル版*/
+@media screen and (max-width: 432px){
+    .wapper {
+        width: 410px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .detail p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .sample {
+        flex-direction: column;
+        text-align-last: left;
+    }
+
+    .sample img {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .sample p {
+        font-size: 1rem;
+        padding: 0 30px;
+    }
+
+    .comment__imgbox1, .comment__imgbox2, .comment__imgbox3 {
+        width: 40%;
+    }
+
+    .recommendation__img1, .recommendation__img2, .recommendation__img3 {
+        margin-bottom: 100px;
+    }
+
+    
+    .recommendation__imgbox {
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .recommendation p {
+        margin-left: 0;
+    }
+
+    .recommendation img {
+        padding-bottom: 30px;
+    }
+
+    .plan {
+        padding-left: 0;
+
+    }
+
+    .accordion-area {
+        width: 60%;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .title,
+    .box .accordion__text {
+        text-align: left;
+    }
+
+    .coupon {
+        margin: 90px 50px 20px;
+        padding: 20px;
+    }
+
+    a.btn-coupon {
+        font-size: 1rem;
+    }
+
+    a.btn-coupon span {
+        font-size: 1.3rem;
+    }
+
+    small {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .wapper {
+        width: 310px;
+    }
+
+    h2 {
+        margin: 75px 0 90px 0;
+    }
+
+    .comment__imgbox1, .comment__imgbox2, .comment__imgbox3 {
+        width: 50%;
+    }
+
+    .sample img {
+        width: 65%;
+    }
+
+    .recommendation img {
+        width: 25%;
+    }
+
+    .guide {
+        margin-bottom: 50px;
+    }
+
+    .guide__couse::before {
+        width: 230px;
+    }
+
+    a.btn-coupon {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+}
+
+
+}
