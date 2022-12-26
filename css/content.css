@@ -12,6 +12,12 @@ html {
     margin: 0 auto;
 }
 
+img {
+    max-width: 100%;
+    margin: 0 auto;
+    vertical-align: bottom;
+}
+
 .work-title {
     text-align: center;
 }
@@ -64,6 +70,12 @@ p {
     display: flex;
     margin-top: 30px;
 
+}
+
+.nisa-img {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 /* ----------------------- */
