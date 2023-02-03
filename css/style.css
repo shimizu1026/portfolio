@@ -300,8 +300,8 @@ img {
     padding: 50px 50px;
 }
 
-.rectangle,
-.rectangle2 {
+
+.tool-box {
     display: flex;
     justify-content: space-between;
 }
