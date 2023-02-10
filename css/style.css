@@ -21,8 +21,6 @@ h1 {
     margin-left: 30px;
 }
 
-
-
 h2 {
     text-align: center;
     font-size: 1.5rem;
@@ -45,14 +43,13 @@ p {
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-top: 50px;
     letter-spacing: 0.05em;
 }
 
 p {
-    font-size: 1.1rem;
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
 img {
@@ -60,7 +57,7 @@ img {
     vertical-align: bottom;
 }
 
-/* header */
+/* mainvisual */
 .mainvisual-pc {
     height: 100vh;
 }
@@ -123,15 +120,6 @@ img {
 .title-sp img,
 .mainvisual-sp img {
     display: none;
-}
-
-.about-title,
-.skill-title,
-.works-title,
-.contact-title {
-    display: flex;
-    align-items: center;
-    justify-content: left;
 }
 
 .about-title::before,
@@ -221,7 +209,6 @@ img {
 /* about */
 .about {
     height: 100vh;
-    margin: 100px 0;
 }
 
 .about-title {
@@ -277,12 +264,77 @@ img {
     0%   { -moz-transform:translate(0%, 0%); }
     100% { -moz-transform:translate(0%, -30px); }
   }
+
+/*===  矢印が動いてスクロールを促す  ====*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown{
+    /*描画位置※位置は適宜調整してください*/
+	position:absolute;
+	bottom:1%;
+	right:50%;
+    /*矢印の動き1秒かけて永遠にループ*/
+	animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove{
+      0%{bottom:1%;}
+      50%{bottom:3%;}
+     100%{bottom:1%;}
+ }
+
+/*Scrollテキストの描写*/
+.scrolldown span{
+    /*描画位置*/
+	position: absolute;
+	left:-20px;
+	bottom:10px;
+    /*テキストの形状*/
+	color: #333;
+	font-size: 0.8rem;
+	letter-spacing: 0.05em;
+	/*縦書き設定*/
+	-ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1.2px;
+    height: 20px;
+    background: #333;
+    transform: skewX(-31deg);
+}
+
+.scrolldown:after{
+	content:"";
+    /*描画位置*/
+	position: absolute;
+	bottom:0;
+	right:0;
+    /*矢印の形状*/
+	width:1.2px;
+	height: 50px;
+	background:#333;
+}
   
 
 /* Skill */
 .skill {
     margin-top: 10px;
     margin-bottom: 180px;
+}
+
+.skill-title {
+    margin-top: 80px;
 }
 
 .skill h2 {
@@ -304,6 +356,7 @@ img {
 .tool-box {
     display: flex;
     justify-content: space-between;
+
 }
 
 .rectangle2 h3 {
@@ -352,6 +405,24 @@ img {
 }
 
 /* Works */
+/*　画像の拡大　*/
+
+.zoomIn img{
+	transform: scale(1);
+	transition: .3s ease-in-out;/*移り変わる速さを変更したい場合はこの数値を変更*/
+}
+
+.zoomIn a:hover img{/*hoverした時の変化*/
+	transform: scale(1.1);/*拡大の値を変更したい場合はこの数値を変更*/
+}
+
+/*　画像のマスク　*/
+
+.mask{
+    display: block;
+    line-height: 0;/*行の高さを0にする*/
+    overflow: hidden;/*拡大してはみ出る要素を隠す*/
+}
 .works-img {
     margin-top: 90px;
 }
@@ -381,18 +452,18 @@ img {
 
 .works-text {
     font-size: 1.1rem;
-    padding-top: 80px;
 }
 
 .contents-text {
     font-size: 1.25rem;
+    font-weight: bold;
     text-align: center;
+    margin-bottom: 3px;
+    padding: 0 20px 0;
 }
 
-.works p {
-    padding-left: 20px;
-    padding: 0px 20px 0;
-    letter-spacing: 0.05em;
+.contents-detail{
+    padding: 0 20px 0;
 }
 
 /*作品詳細のボタン*/
@@ -451,7 +522,7 @@ img {
     display: flex;
     width: 370px;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 .contents a {
@@ -595,6 +666,7 @@ footer p{
     /*about*/
     .about {
         height: auto;
+        margin-top: 100px;
     }
 
     .about ul {
@@ -785,6 +857,10 @@ footer p{
     
     }
 
+    .tool-box {
+        flex-direction: column;
+    }
+
     .text-layout {
         margin-top: 10px;
         margin-right: 0px;
@@ -813,7 +889,7 @@ footer p{
     }
 
     .works p {
-        padding-top: 5px;
+        padding: 5px 20px 0 20px;
         line-height: 1.6;
     }
 

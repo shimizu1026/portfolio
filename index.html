@@ -10,10 +10,7 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- リセットCSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/common.css">
@@ -22,9 +19,6 @@
 </head>
 
 <body id="top">
-
-
-
 
     <header>
         <button class="menu-btn" id="menu-btn" type="button">
@@ -51,6 +45,7 @@
     <div class="mainvisual-pc fadeUp delay-time1 timing-linear">
         <img class="pendulum" src="images/mainvisual.png" alt="">
     </div><!-- mainvisual-pc -->
+    <div class="scrolldown"><span>Scroll</span></div>
 
     <div class="mainvisual-sp fwari">
         <img src="images/mainvisual_sp.png" alt="">
@@ -58,7 +53,7 @@
 
     <section id="about" class="about">
         <div class="about-title fadeUpTrigger">
-            <h2><span class="text-title">About me</span>わたしについて</h2>
+            <h2><span class="text-title">About</span></h2>
         </div>
         <div class="about-box">
             <ul class="fadeUpTrigger delay-time1">
@@ -80,7 +75,7 @@
     </section><!-- .about -->
 
     <div id="skill" class="skill-title fadeUpTrigger">
-        <h2><span class="text-title">Skill</span>できること</h2>
+        <h2><span class="text-title">Skill</span></h2>
     </div>
     <section class="skill wapper">
 
@@ -135,7 +130,7 @@
                     </div>
                     <div class="tool-layout"><img src="images/php.png" alt="">
                         <p>PHP</p>
-                </div>
+                    </div>
                 </div>
             </section><!-- rectangle2 -->
 
@@ -151,7 +146,7 @@
 
     <section id="works" class="works">
         <div class="works-title fadeUpTrigger">
-            <h2><span class="text-title">Works</span>制作物</h2>
+            <h2><span class="text-title">Works</span></h2>
         </div>
         <div class="works-img"><img src="images/w-img.png" alt=""></div>
         <div class="works-box">
@@ -162,31 +157,30 @@
             <h3 id="site">サイト</h3>
             <div class="site-list wapper fadeUpTrigger">
 
-                <div class="contents contener">
+                <div class="contents contener zoomIn">
                     <a href="https://pc-hana.com/41/team-b/" target="_blank">
-                        <img src="images/frei.jpg" alt=""></a>
+                        <span class="mask"><img src="images/frei.jpg" alt="ドイツ式フットケアfrei様のサイトの画像"></span></a>
                     <p class="contents-text">ドイツ式フットケアfrei様のサイト</p>
-                    <p>卒業制作チームで作成したサイトです。</p>
                     <a class="works-btn" href="content5.html" target="_blank">作品詳細</a>
                 </div><!-- contents -->
-                <div class="contents contener delay-time02 box fadeUpTrigger">
-                    <a href="kanpo#index.html" target="_blank"><img src="images/kanpoimg.jpg" alt=""></a>
+                <div class="contents contener delay-time02 box fadeUpTrigger zoomIn">
+                    <a href="kanpo#index.html" target="_blank">
+                        <span class="mask"><img src="images/kanpoimg.jpg" alt="漢方薬局のサイトの画像"></span></a>
                     <p class="contents-text">架空の漢方薬局のサイト</p>
-                    <p>健康をテーマに作成した架空の漢方薬局のサイトです。</p>
                     <a class="works-btn" href="content7.html" target="_blank">作品詳細</a>
                 </div><!-- contents -->
 
-                <div class="contents contener delay-time04 box fadeUpTrigger">
-                    <a href="derivery#index.html" target="_blank"><img src="images/derivery.jpg" alt=""></a>
+                <div class="contents contener delay-time04 box fadeUpTrigger zoomIn">
+                    <a href="derivery#index.html" target="_blank">
+                        <span class="mask"><img src="images/derivery.jpg" alt="宅配弁当サービスのサイトの画像"></span></a>
                     <p class="contents-text">架空の宅配弁当サービスのサイト</p>
-                    <p>健康をテーマに作成した架空の宅配弁当サービスのサイトです。</p>
                     <a class="works-btn" href="content12.html" target="_blank">作品詳細</a>
                 </div><!-- contents -->
 
-                <div class="contents contener delay-time06 box fadeUpTrigger">
-                    <a href="content11.html" target="_blank"><img src="images/bleuocean.jpg" alt=""></a>
+                <div class="contents contener delay-time06 box fadeUpTrigger zoomIn">
+                    <a href="content11.html" target="_blank">
+                        <span class="mask"><img src="images/bleuocean.jpg" alt="スキルページのデザインカンプの画像"></span></a>
                     <p class="contents-text">スキルページのデザインカンプ</p>
-                    <p>職業訓練の授業でチームでデザインしたサイトのスキルページです。</p>
                     <a class="works-btn" href="content11.html" target="_blank">作品詳細</a>
                 </div><!-- contents -->
 
@@ -195,100 +189,118 @@
             <h3 id="banner">バナー</h3>
 
             <div class="banner-list wapper fadeUpTrigger">
-                <div class="contents contener box fadeUpTrigger"><a href="content16.html" target="_blank"><img src="images/personal.jpg" alt=""></a>
-                    <p class="contents-text">架空のパーソナルトレーニングジムの販促のバナー</p>
-    
-                    <p>ひろしまクリエイターズギルドのバナー勉強会でお題を頂き作成。
-                    <br>ターゲットを30～40代のお菓子好きで、
-                    運動不足や産後で下腹が気になる方としました。
-                    シャープでかっこいい印象にし、ジムに通ってかっこいい体へ
-                    変化することをイメージできるよう、はっきりした配色と直線的な要素を使用しました。
+                <div class="contents contener box fadeUpTrigger zoomIn">
+                    <a href="content16.html" target="_blank">
+                        <span class="mask"><img src="images/personal.jpg" alt="パーソナルトレーニングジムの販促のバナー画像"></span></a>
+                    <p class="contents-text">架空のパーソナルトレーニングジムのバナー</p>
+
+                    <p class="contents-detail">ひろしまクリエイターズギルドのバナー勉強会でお題を頂き作成。
+                        <br>ターゲットを30～40代のお菓子好きで、
+                        運動不足や産後で下腹が気になる方としました。
+                        シャープでかっこいい印象にし、ジムに通ってかっこいい体へ
+                        変化することをイメージできるよう、はっきりした配色と直線的な要素を使用しました。
                     </p>
                 </div><!-- contents -->
 
-                <div class="contents contener delay-time02 box fadeUpTrigger"><a href="content15.html" target="_blank"><img src="images/printer.jpg" alt=""></a>
+                <div class="contents contener delay-time02 box fadeUpTrigger zoomIn">
+                    <a href="content15.html" target="_blank">
+                        <span class="mask"><img src="images/printer.jpg" alt="プリンターのバナー画像"></span></a>
                     <p class="contents-text">架空のプリンターのバナー</p>
-    
+
                     <p>ひろしまクリエイターズギルドのバナー勉強会でお題を頂き作成。
-                    <br>ターゲットを物流・運送会社とし、LPへ誘導することでプリンターを周知してもらうことが目的です。
-                    競合よりもプリントスピードが優れているため、印刷を効率よく行い、業務効率化をのぞめることが伝わるよう意識しました。
+                        <br>ターゲットを物流・運送会社とし、LPへ誘導することでプリンターを周知してもらうことが目的です。
+                        競合よりもプリントスピードが優れているため、印刷を効率よく行い、業務効率化をのぞめることが伝わるよう意識しました。
                     </p>
                 </div><!-- contents -->
 
-                <div class="contents contener delay-time04 box fadeUpTrigger"><a href="content13.html" target="_blank"><img src="images/osechi.jpg" alt="おせちの販促バナー"></a>
+                <div class="contents contener delay-time04 box fadeUpTrigger zoomIn">
+                    <a href="content13.html" target="_blank">
+                        <span class="mask"><img src="images/osechi.jpg" alt="おせちの販促バナー"></span></a>
                     <p class="contents-text">架空のおせちの販促バナー</p>
-                    <p>おせちの販促なので筆文字とオールド明朝を使用し、
+                    <p class="contents-detail">おせちの販促なので筆文字とオールド明朝を使用し、
                         高級感を出すために、黒をベースカラーとし、お正月らしく赤と金色を使用しました。
                         和の雰囲気をだすために、青海波柄を背景に使用しました。</p>
                 </div><!-- contents -->
 
 
-                <div class="contents contener delay-time02 box fadeUpTrigger"><a href="content17.html" target="_blank"><img src="images/cosme.jpg" alt="NISAのバナー"></a>
+                <div class="contents contener delay-time02 box fadeUpTrigger zoomIn">
+                    <a href="content17.html" target="_blank">
+                        <span class="mask"><img src="images/cosme.jpg" alt="NISAのバナー"></span></a>
                     <p class="contents-text">架空の化粧水のバナー</p>
-                    <p>ひろしまクリエイターズギルドのバナー勉強会でお題を頂き作成。
+                    <p class="contents-detail">ひろしまクリエイターズギルドのバナー勉強会でお題を頂き作成。
                         <br>ターゲットを機能性やコストパフォーマンスの高さを化粧品に求める10代～40代の女性とし、バナーの目的はLPへの誘導です。
                         商品が化粧水なので、ぷるっとした潤いを感じさせること、機能性のある商品だと感じられるよう意識しました。
                     </p>
                 </div><!-- contents -->
-                <div class="contents contener delay-time04 box fadeUpTrigger"><a href="content14.html" target="_blank"><img src="images/nisa.jpg" alt="NISAのバナー"></a>
-                    <p class="contents-text">架空のつみたてNISA講座への誘導バナー</p>
-                    <p>ひろしまクリエイターズギルドのバナー勉強会でお題を頂き作成。
+                <div class="contents contener delay-time04 box fadeUpTrigger zoomIn">
+                    <a href="content14.html" target="_blank">
+                        <img src="images/nisa.jpg" alt="NISAのバナー"></a>
+                    <p class="contents-text">架空のつみたてNISA講座のバナー</p>
+                    <p class="contents-detail">ひろしまクリエイターズギルドのバナー勉強会でお題を頂き作成。
                         <br>ターゲットを20～30代後半とし、初心者向けの講座への誘導としました。
                         金融系のため真面目さを意識して、ベースは水色、注意をひきインパクトのある黄色と赤を選択。
                         中央に要素を置き、安定感のある見た目にしました。
                     </p>
                 </div><!-- contents -->
-                <div class="contents contener delay-time06 box fadeUpTrigger"><a href="content2.html" target="_blank"><img src="images/star.jpg" alt=""></a>
+                <div class="contents contener delay-time06 box fadeUpTrigger zoomIn">
+                    <a href="content2.html" target="_blank">
+                        <span class="mask"><img src="images/star.jpg" alt="旅行会社のバナー画像"></span></a>
                     <p class="contents-text">架空の旅行会社のバナー</p>
 
-                    <p>旅のテーマが星を見る旅のため、左上の文字のフォントは直線的なフォントを使用し、星をあしらいました。
+                    <p class="contents-detail">旅のテーマが星を見る旅のため、左上の文字のフォントは直線的なフォントを使用し、星をあしらいました。
                         流れ星をイメージし、曲線の枠をつけています。
                         <br>文字情報はまとめ、星空が目立たせて旅へのわくわく感を感じていただけるようにしました。</p>
                 </div><!-- contents -->
 
-                <div class="contents contener delay-time02 box fadeUpTrigger"><a href="content.html" target="_blank"><img src="images/nekotabi.jpg" alt=""></a>
+                <div class="contents contener delay-time02 box fadeUpTrigger zoomIn">
+                    <a href="content.html" target="_blank">
+                        <span class="mask"><img src="images/nekotabi.jpg" alt="旅行会社のバナー画像"></span></a>
                     <p class="contents-text">架空の旅行会社のバナー</p>
 
-                    <p>町を歩いて猫と出会える旅の楽しさや わくわく感を感じてもらえるようなデザインを目指しました。
+                    <p class="contents-detail">町を歩いて猫と出会える旅の楽しさや わくわく感を感じてもらえるようなデザインを目指しました。
                         手書き風の文字とオレンジ色で親しみやすさ、 フォントに猫耳を入れてねこと出会う旅の雰囲気を表現しました。</p>
                 </div><!-- contents -->
 
 
-                <div class="contents contener delay-time04 box fadeUpTrigger">
-                    <a href="content8.html" target="_blank"><img src="images/nekotabi2.jpg" alt=""></a>
+                <div class="contents contener delay-time04 box fadeUpTrigger zoomIn">
+                    <a href="content8.html" target="_blank">
+                        <span class="mask"><img src="images/nekotabi2.jpg" alt="旅行会社のバナー画像"></span></a>
                     <p class="contents-text">架空の旅行会社のバナー</p>
 
-                    <p>一辺立ち落としにしてアシンメトリーな動きのあるデザインに挑戦しました。
+                    <p class="contents-detail">一辺立ち落としにしてアシンメトリーな動きのあるデザインに挑戦しました。
                         <br>マルタ島は海が美しい場所でもあるため、青色を使用して海を感じられるようにしました。</p>
                 </div><!-- contents -->
 
 
-                <div class="contents contener delay-time06 box fadeUpTrigger">
+                <div class="contents contener delay-time06 box fadeUpTrigger zoomIn">
                     <a href="content9.html" target="_blank">
-                        <img class="move" src="images/salebanner.gif" alt="">
+                        <span class="mask"><img class="move" src="images/salebanner.gif" alt="クリアランスセールのバナー画像"></span>
                     </a>
                     <p class="contents-text">架空のクリアランスセールのバナー</p>
 
-                    <p>文字を点滅させたり、一文字ずつ表示させたり、強弱以外で文字を目立たせる工夫を学びました。</p>
+                    <p class="contents-detail">文字を点滅させたり、一文字ずつ表示させたり、強弱以外で文字を目立たせる工夫を学びました。</p>
                 </div><!-- contents -->
 
 
             </div>
             <h3 class="other">その他</h3>
             <div class="other-list wapper fadeUpTrigger">
-                <div class="contents contener delay-time02 box fadeUpTrigger">
-                    <div class="contents-inner"><a href="content3.html" target="_blank"><img src="images/card.jpg" alt=""></a></div>
+                <div class="contents contener delay-time02 box fadeUpTrigger zoomIn">
+                    <div class="contents-inner">
+                        <a href="content3.html" target="_blank">
+                            <span class="mask"><img src="images/card.jpg" alt="名刺の画像"></span></a></div>
 
                     <p class="contents-text">名刺</p>
-                    <p>Illustratorで描いた似顔絵はくせ毛とメガネと一重がポイントです。
+                    <p class="contents-detail">Illustratorで描いた似顔絵はくせ毛とメガネと一重がポイントです。
                         頭頂部の毛は植物の若葉や双葉をイメージし、どんな場所でもこれから伸びていく！という思いを表現しました。
                         <br>淡い色合いを使用して優しい印象になるようにしました。
                     </p>
                 </div><!-- contents -->
-                <div class="contents contener delay-time04 box fadeUpTrigger">
-                    <div class="contents-inner"><a href="content4.html" target="_blank"><img src="images/card2.jpg" alt=""></a></div>
+                <div class="contents contener delay-time04 box fadeUpTrigger zoomIn">
+                    <div class="contents-inner"><a href="content4.html" target="_blank">
+                            <span class="mask"><img src="images/card2.jpg" alt="名刺の画像"></span></a></div>
                     <p class="contents-text">名刺</p>
-                    <p>レトロなものが好きなので、キャラメルのパッケージをイメージして作成しました。
+                    <p class="contents-detail">レトロなものが好きなので、キャラメルのパッケージをイメージして作成しました。
                         AB-lineboardというフォントを使用したり、バラなどのあしらいをつけてレトロ感を出しました。
                         <br>裏面には自分の性質や性格などをキャラメルの成分表を参考にしました。</p>
                 </div><!-- contents -->
@@ -298,7 +310,8 @@
 
     </section><!-- works -->
 
-    <h2 id="contact" class="contact-title fadeUpTrigger .delay-time1"><span class="text-title">Contact</span>お問い合わせ</h2>
+    <h2 id="contact" class="contact-title fadeUpTrigger .delay-time1">
+        <span class="text-title">Contact</span></h2>
     <div class="contact wapper">
 
         <form action="#">
