@@ -217,7 +217,7 @@ img {
 
 .about ul {
     background-image: url(../images/triangle.png);
-    background-position: 175px 15px;
+    background-position: 175px -9px;
     width: 60%;
 }
 
@@ -466,6 +466,7 @@ h4 {
 
 .works-text {
     font-size: 1.1rem;
+    padding: 0 20px 0;
 }
 
 .contents-text {
@@ -680,7 +681,7 @@ footer p{
     /*about*/
     .about {
         height: auto;
-        margin-top: 130px;
+        margin-top: 250px;
     }
 
     .about ul {
@@ -742,8 +743,29 @@ footer p{
 
 }
 
-/* 共通設定
------------------------ */
+/* ----------------------- */
+@media(max-width: 769px) {
+    /*共通*/
+    .scrolldown:before {
+        bottom: 339px;
+    }
+    .scrolldown span {
+        bottom: 354px;
+    }
+
+    .scrolldown:after {
+        bottom: 339px;
+    }
+
+    /*about*/
+    .about ul {
+        background-position: 180px 36px;
+    }
+
+
+}
+
+/*----------------------- */
 @media(max-width: 435px) {
     /*共通*/
     .wapper {
@@ -773,6 +795,18 @@ footer p{
     img {
         display: block;
         margin: 0 auto;
+    }
+
+    .scrolldown span {
+        bottom: -150px;
+    }
+
+    .scrolldown:before {
+        bottom: -164px;
+    }
+
+    .scrolldown:after {
+        bottom: -164px;
     }
 
     /*メインビジュアル*/
