@@ -153,6 +153,98 @@ footer p {
 
 /* ----------------------- */
 @media(max-width: 960px) {
+        /*gnav*/
+        .gnav {
+            display: none;
+        }
+    
+        .menu {
+            display: block;
+        }
+    
+        .gnav li a::after {
+            display: none;
+        }
+        
+        /*ハンバーガーアイコン*/
+        .menu-btn {
+            position: fixed;
+            top: 0;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 5px;
+            z-index: 200;
+        }
+    
+        .menu-btn:focus {
+            outline: none;
+        }
+    
+        .menu-btn span {
+            background: #333;
+            display: block;
+            font-size: 0.3rem;
+            width: 80%;
+            height: 2px;
+        }
+    
+        .menu-btn span:nth-of-type(2)::after {
+            content: "Menu";
+            /*2つ目の要素のafterにMenu表示を指定*/
+            content: "MENU";
+            position: absolute;
+            top: 37px;
+            right: 13px;
+            color: #333;
+            font-size: 0.6rem;
+            text-transform: uppercase;
+        }
+    
+        .close span:first-child {
+            transform: rotate(45deg) translate(1px, -1px);
+            transform-origin: left top;
+        }
+    
+        .close span:nth-of-type(2) {
+            transform: rotate(-45deg) translate(-6px, -1px);
+        }
+    
+        .close span:nth-of-type(2)::after {
+            display: none;
+        }
+    
+        #gnav.open {
+            display: block;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: rgba(249,248,244,.9);
+            padding: 0 30px;
+            z-index: 100;
+        }
+    
+        .gnav__list {
+            min-width: 360px;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+    
+        .gnav__list img {
+            width: 50%;
+        }
+    
+        .gnav__link {
+            display: block;
+            font-size: 1.5rem;
+            padding: .8em 90px .8em 1em;
+    
+        }
+    
     #gnav.open {
         display: block;
         height: 100vh;
@@ -164,109 +256,18 @@ footer p {
         z-index: 100;
     }
 
-
-    .gnav__list {
-        margin-top: 25px;
-    }
     .gnav__item {
         font-size: 1rem;
     }
 }
 /* ----------------------- */
+@media(max-width: 769px) {
+    .about ul {
+        background-position: 180px 36px;
+    }
+}
+/* ----------------------- */
 @media(max-width: 435px) {
-    /*gnav*/
-    .gnav {
-        display: none;
-    }
-
-    .menu {
-        display: block;
-    }
-
-    .gnav li a::after {
-        display: none;
-    }
-    
-    /*ハンバーガーアイコン*/
-    .menu-btn {
-        position: fixed;
-        top: 0;
-        right: 20px;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 20px 5px;
-        z-index: 200;
-    }
-
-    .menu-btn:focus {
-        outline: none;
-    }
-
-    .menu-btn span {
-        background: #333;
-        display: block;
-        font-size: 0.3rem;
-        width: 80%;
-        height: 2px;
-    }
-
-    .menu-btn span:nth-of-type(2)::after {
-        content: "Menu";
-        /*2つ目の要素のafterにMenu表示を指定*/
-        content: "MENU";
-        position: absolute;
-        top: 37px;
-        right: 13px;
-        color: #333;
-        font-size: 0.6rem;
-        text-transform: uppercase;
-    }
-
-    .close span:first-child {
-        transform: rotate(45deg) translate(1px, -1px);
-        transform-origin: left top;
-    }
-
-    .close span:nth-of-type(2) {
-        transform: rotate(-45deg) translate(-6px, -1px);
-    }
-
-    .close span:nth-of-type(2)::after {
-        display: none;
-    }
-
-    #gnav.open {
-        display: block;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        background-color: rgba(249,248,244,.9);
-        padding: 0 30px;
-        z-index: 100;
-    }
-
-    .gnav__list {
-        min-width: 360px;
-        flex-direction: column;
-        margin-top: 50px;
-    }
-
-    .gnav__list img {
-        width: 50%;
-    }
-
-    .gnav__link {
-        display: block;
-        font-size: 1.5rem;
-        padding: .8em 90px .8em 1em;
-
-    }
-
-
     /*トップに戻るボタン*/
     .top__link.open {
         right: 15px;
