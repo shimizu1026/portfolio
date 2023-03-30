@@ -655,8 +655,8 @@ footer::before {
 }
 
 footer p{
-    padding-top: 140px;
     background-color: #00AFCC;
+    padding-top: 140px;
 }
 
     /* 共通設定
@@ -697,8 +697,8 @@ footer p{
     .about-box {
         display: flex;
         flex-direction: column-reverse;
-        background-repeat: no-repeat;
         align-items: center;
+        background-repeat: no-repeat;
     }
 
     .about-img {
