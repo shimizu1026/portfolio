@@ -13,6 +13,10 @@ html {
     margin: 0 auto;
 }
 
+h3 {
+    margin-top: 20px;
+}
+
 img {
     max-width: 100%;
     vertical-align: bottom;
@@ -38,7 +42,7 @@ span {
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.7;
     margin-top: 10px;
 }
@@ -77,6 +81,20 @@ p {
     display: flex;
     margin-top: 30px;
     margin-bottom: 20px;
+}
+
+.design-detail_list {
+    margin: 30px 30px;
+}
+
+.contents__inner__kanpu {
+    display: flex;
+}
+
+.contens__inner__kanpu1,
+.contents__inner__kanpu__pc,
+.contens__inner__kanpu2 {
+    margin-right: 30px;
 }
 
 /* ----------------------- */
