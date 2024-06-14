@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>START</title>
+    <!-- css -->
+    <link rel="stylesheet" href="resources/styles/destyle.css" />
+    <link rel="stylesheet" href="resources/styles/common.css" />
+    <link rel="stylesheet" href="resources/styles/company.css" />
+
+    <!-- js -->
+    <script src="resources/js/script.js" defer></script>
+    <!-- Noto sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <!-- 32×32 -->
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <!-- 180×180 -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+  </head>
+  <body>
+    <header class="Header">
+      <h1 class="Header_Logo">
+        <img
+          src="resources/images/logo.svg"
+          alt="START"
+          width="167"
+          height="33"
+          decoding="async"
+          loading="lazy"
+        />
+      </h1>
+      <button class="Button">
+        <div class="Button-LineTop"></div>
+        <div class="Button-LineMedium"></div>
+        <div class="Button-LineBottom"></div>
+      </button>
+
+      <nav class="Header_Nav">
+        <ul class="Header_Nav__List">
+          <li class="Header_Nav__Item">
+            <a href="news.html" class="Header_Nav__Link Change_Color">ホーム</a>
+          </li>
+          <li class="Header_Nav__Item">
+            <a href="message.html" class="Header_Nav__Link">メッセージ</a>
+          </li>
+          <li class="Header_Nav__Item">
+            <a href="company.html" class="Header_Nav__Link">会社概要</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <div class="Overlay"></div> -->
+    </header>
+    <main class="Main">
+      <div class="Page_Header">
+        <p>会社概要</p>
+      </div>
+      <!-- /.Page_Header -->
+      <section class="Overview">
+        <div class="Table_Wrapper">
+          <table class="Overview_Table">
+            <tbody>
+              <tr>
+                <th>社名</th>
+                <td>株式会社START</td>
+              </tr>
+              <tr>
+                <th>設立</th>
+                <td>2025.02.10</td>
+              </tr>
+              <tr>
+                <th>代表取締役</th>
+                <td>ショーン・デイビット・ジュニア</td>
+              </tr>
+              <tr>
+                <th>資本金</th>
+                <td>10,000,000円</td>
+              </tr>
+              <tr>
+                <th>所在地</th>
+                <td>〒555-5555 東京都千代田区 スタートビルディング 606</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- /.Overview_Inner -->
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25924.78905075417!2d139.7563792!3d35.686883699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0c0b13f54d%3A0xb630953beee48188!2z5p2x5Lqs6YO95Y2D5Luj55Sw5Yy6!5e0!3m2!1sja!2sjp!4v1718342110347!5m2!1sja!2sjp"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="GMap"
+        ></iframe>
+      </section>
+      <!-- /.Overview -->
+      <section class="News">
+        <div class="News_Inner">
+          <ul class="News__List">
+            <li class="News__Item">
+              <a href="" class="News__Link">
+                <div class="News_Date">
+                  <time datetime="2030-02-10">2030.02.10</time>
+                </div>
+                <!-- /.News_Date -->
+                <p class="News_Text">
+                  コーポレートサイトをリニューアルしました。
+                </p>
+              </a>
+            </li>
+            <li class="News__Item">
+              <a href="" class="News__Link">
+                <div class="News_Date">
+                  <time datetime="2030-02-08">2030.02.08</time>
+                </div>
+                <!-- /.News_Date -->
+                <p class="News_Text">採用を強化中です！一緒に働きませんか？</p>
+              </a>
+            </li>
+            <li class="News__Item">
+              <a href="" class="News__Link">
+                <div class="News_Date">
+                  <time datetime="2030-02-02">2030.02.02</time>
+                </div>
+                <!-- /.News_Date -->
+                <p class="News_Text">
+                  人材紹介SNS『スタート』をリリースしました。3/31まで新規登録キャンペーンを開催中です！サービス内で使える500ポイントをプレゼント！
+                </p>
+              </a>
+            </li>
+          </ul>
+          <!-- /.News__List -->
+        </div>
+        <!-- /.News_Inner -->
+      </section>
+      <!-- /.News -->
+    </main>
+    <footer class="Footer">
+      <div class="Footer_Inner">
+        <nav class="Footer_Nav">
+          <ul class="Footer_Nav__List">
+            <li class="Footer_Nav__Item">
+              <a href="news.html" class="Footer_Nav__Link">ホーム</a>
+            </li>
+            <li class="Footer_Nav__Item">
+              <a href="" class="Footer_Nav__Link">メッセージ</a>
+            </li>
+            <li class="Footer_Nav__Item">
+              <a href="" class="Footer_Nav__Link">会社概要</a>
+            </li>
+          </ul>
+        </nav>
+        <small class="Copyright">©START</small>
+      </div>
+    </footer>
+  </body>
+</html>

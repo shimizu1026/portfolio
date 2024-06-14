@@ -1,0 +1,136 @@
+
+:root {
+    --font-family-noto: "Noto Sans JP", sans-serif;
+    --font-weight-noto-regular: 400;
+    --font-weight-noto-medium: 500;
+    --font-weight-noto-bold: 700;
+    --font-family-roboto: 'Roboto', sans-serif;
+    --font-weight-roboto-regular: 400;
+    --font-weight-roboto-medium: 500;
+    --font-weight-roboto-bold: 700;
+    --main-color: #DD1B57;
+    --base-color: #fff;
+    --font-color: #333333;
+    --gray-font-color: #F2F2F2;
+}
+
+.Main {
+    padding-top: 90px;
+    width: 100%;
+}
+
+.Overview {
+    padding: 60px 20px 0;
+    margin: auto;
+    max-width: 1110px;
+}
+
+@media (max-width: 768px) {
+    .Overview {
+        padding-top: 40px;
+    }
+}
+
+
+.Overview_Table {
+    width: 100%;
+    max-width: 1110px;
+}
+
+.Overview_Table tr {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.Overview_Table th,
+.Overview_Table td {
+    font-size: 15px;
+    font-family: var(--font-family-noto);
+    color: var(--font-color);
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .Overview_Table th,
+    .Overview_Table td {
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 0;
+        padding: 20px;
+    }
+}
+
+.Overview_Table th {
+    font-weight: var(--font-weight-noto-bold);
+}
+
+.Overview_Table td {
+    font-weight: var(--font-weight-noto-medium);
+
+}
+
+
+.GMap {
+    width: 100%;
+    height: 400px;
+    aspect-ratio: 16/9;
+    margin-top: 50px;
+}
+
+
+.News {
+    padding: 80px 20px 100px;
+}
+
+@media (max-width: 768px) {
+    .News {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+}
+
+.News_Inner {
+    margin: 0 auto;
+    max-width: 1110px;
+}
+
+.News__List {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.News__Link {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    font-size: 15px;
+    color: var(--font-color);
+    line-height: 1.8;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--gray-font-color);
+}
+
+@media (max-width: 768px) {
+    .News__Link {
+        flex-direction: column;
+    }
+}
+
+@media (any-hover: hover) {
+    .News__Link:hover {
+        color: var(--main-color);
+    }
+}
+
+.News_Text {
+    font-weight: var(--font-weight-noto-medium);
+    font-family: var(--font-family-noto);
+}
+
+.News_Date {
+    font-weight: var(--font-weight-roboto-medium);
+    font-family: var(--font-family-roboto);
+    margin-right: 20px;
+}
