@@ -1,0 +1,59 @@
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mb60 {
+    margin-bottom: 60px;
+}
+
+.Mr8 {
+    margin-right: 8px;
+}
+
+.Ml8 {
+    margin-left: 8px;
+}
+
+
+.Main {
+    width: 100%;
+    min-height: calc(100vh - 60px - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333333;
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.Error-Txt {
+    font-size: 16px;
+    color: #333333;
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
+    margin-bottom: 10px;
+}
+
+.Error-Url {
+    font-size: 18px;
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
+    margin-bottom: 10px;
+}
+
+input {
+    border: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.Contents-Inner {
+    max-width: 1200px;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}

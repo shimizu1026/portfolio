@@ -1,0 +1,285 @@
+
+
+.Contents-Inner {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.Recruit {
+    background-image: url(../images/recruit/recruit_bg.jpg);
+    padding-bottom: 110px;
+}
+
+@media screen and (max-width: 786px) {
+    .Recruit {
+        padding-bottom: 80px;
+    }
+}
+
+
+@media screen and (max-width: 786px) {
+    .Recruit .Inner {
+        padding-top: 40px;
+    }
+}
+
+.Recruit-Copy {
+    text-align: center;
+    padding: 0 16px;
+}
+
+.Recruit-Ttl {
+    font-size: 72px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #391E88;
+    letter-spacing: 0.01em;
+    padding-top: 116px;
+}
+
+@media screen and (max-width: 786px) {
+    .Recruit-Ttl {
+        font-size: 24px;
+        padding-top: 40px;
+    }
+}
+
+
+.Recruit-Subttl {
+    font-size: 32px;
+    color: #391E88;
+    letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 786px) {
+    .Recruit-Subttl {
+        margin-top: 12px;
+    }
+}
+
+.Recruit-Text {
+    font-size: 16px;
+    line-height: 2.3;
+    letter-spacing: 0.05em;
+    margin-top: 34px;
+}
+
+@media screen and (max-width: 786px) {
+    .Recruit-Text {
+        line-height:  1.8;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .Recruit-Hero {
+        margin-top: 38px;
+    }
+}
+
+
+.Entry {
+    padding: 0 20px;
+    letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 786px) {
+    .Entry {
+        padding-top: 35px;
+    }
+}
+
+
+.Entry-Contents {
+    max-width: 1110px;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #B8AED5;
+    border-radius: 10px;
+    padding: 60px 95px;
+}
+
+@media screen and (max-width: 786px) {
+    .Entry-Contents {
+        padding: 28px 20px 20px;
+    }
+}
+
+
+.Entry-Ttl {
+    color: #391E88;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 36px;
+}
+
+.Entry-Inner {
+    display: flex;
+    column-gap: 100px;
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 786px) {
+    .Entry-Inner {
+        flex-direction: column;
+        row-gap: 5px;
+        padding: 14px 0 22px 0;
+    }
+}
+
+
+.Entry-Label,
+.Entry-Description {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 786px) {
+    .Entry-Label,
+    .Entry-Description {
+        font-size: 14px;
+    }
+}
+
+.Entry-Label {
+    flex: 1;
+    padding: 30px;
+}
+
+@media screen and (max-width: 786px) {
+    .Entry-Label {
+        padding: 0;
+    }
+}
+
+.Entry-Description {
+    flex: 5;
+    padding: 30px;
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 786px) {
+    .Entry-Description {
+        padding: 0;
+    }
+}
+
+.Font-M {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Entry-Job {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+@media screen and (max-width: 786px) {
+    .Entry-Job {
+        font-size: 16px;
+        /* line-height: 6.1; */
+    }
+}
+
+
+.Entry-Skill {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    list-style-type: disc;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    padding: 30px;
+}
+
+.Entry-Skill-Description {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.Entry-Skill-List {
+    margin-left: 30px;
+}
+
+.Btn-Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.Entry-Btn {
+    width: 220px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,#7633A4, #250D65);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 6;
+    letter-spacing: 0.05em;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 786px) {
+    .Entry-Btn {
+        margin-top: 40px;
+    }
+}
+
+.Entry-Btn a {
+    width: 100%;
+    text-align: center;
+}
+
+
+.Entry-Next {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 6;
+    letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 786px) {
+    .Entry-Next {
+        padding-top: 8px;
+        line-height: 8;
+    }
+}
+
+.Movie {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    text-align: center;
+    margin-top: 36px;
+    padding: 0 20px;
+}
+
+.Movie-Ttl {
+    font-size: 32px;
+    color: #391E88;
+    letter-spacing: 0.05em;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 786px) {
+    .Movie-Ttl {
+        font-size: 24px;
+        margin-bottom: 27px;
+    }
+}
+
+.Movie iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    max-width: 1110px;
+}

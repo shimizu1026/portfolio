@@ -1,0 +1,91 @@
+
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mb60 {
+    margin-bottom: 60px;
+}
+
+.Contents-Inner {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.Service {
+    max-width: 1110px;
+    color: #333333;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 110px;
+}
+
+@media screen and (max-width: 786px) {
+    .Service {
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+}
+
+.Service-Inner {
+    display: flex;
+    row-gap: 60px;
+    flex-direction: column;
+}
+
+.Article {
+    display: flex;
+    column-gap: 50px;
+}
+
+@media screen and (max-width: 786px) {
+    .Article {
+        flex-direction: column;
+    }
+}
+
+.Service-Text-Box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Service-Ttl {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 786px) {
+    .Service-Ttl {
+        font-size: 22px;
+        line-height: 1.5;
+        margin-top: 18px;
+        margin-bottom: 15px; 
+        text-align: center;
+    }
+}
+
+.Service img {
+    aspect-ratio: 445/280;
+    object-fit: cover;
+    flex: 1;
+}
+
+.Service-Text {
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 786px) {
+    .Service-Text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
