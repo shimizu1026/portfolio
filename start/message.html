@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>START</title>
+    <!-- css -->
+    <link rel="stylesheet" href="resources/styles/destyle.css" />
+    <link rel="stylesheet" href="resources/styles/common.css" />
+    <link rel="stylesheet" href="resources/styles/message.css" />
+
+    <!-- js -->
+    <script src="resources/js/script.js" defer></script>
+    <!-- Noto sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <!-- 32×32 -->
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <!-- 180×180 -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+  </head>
+  <body>
+    <header class="Header">
+      <h1 class="Header_Logo">
+        <img
+          src="resources/images/logo.svg"
+          alt="START"
+          width="167"
+          height="33"
+          decoding="async"
+          loading="lazy"
+        />
+      </h1>
+      <button class="Button">
+        <div class="Button-LineTop"></div>
+        <div class="Button-LineMedium"></div>
+        <div class="Button-LineBottom"></div>
+      </button>
+
+      <nav class="Header_Nav">
+        <ul class="Header_Nav__List">
+          <li class="Header_Nav__Item">
+            <a href="news.html" class="Header_Nav__Link Change_Color">ホーム</a>
+          </li>
+          <li class="Header_Nav__Item">
+            <a href="message.html" class="Header_Nav__Link">メッセージ</a>
+          </li>
+          <li class="Header_Nav__Item">
+            <a href="company.html" class="Header_Nav__Link">会社概要</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <div class="Overlay"></div> -->
+    </header>
+    <main class="Main">
+      <div class="Page_Header">
+        <p>メッセージ</p>
+      </div>
+      <!-- /.Page_Header -->
+      <div class="Message_Wrapper">
+        <div class="Message_Intro">
+          <h2 class="Message_Lead">
+            「仕事」をきっかけに<br />
+            人生の新しいスタートを！
+          </h2>
+          <p>大事なお仕事探しを応援させてください</p>
+        </div>
+        <section class="CEO_Message">
+
+            <img
+              src="resources/images/ceo.png"
+              alt="CEO"
+              width="100"
+              height="100"
+              decoding="async"
+              loading="lazy"
+              class="CEO_Img"
+            />
+            <p class="CEO_Txt">
+              はじめまして。代表取締役社長のショーン・デイビット・ジュニアです。<br />
+              私はそこそこ幸せです。それは仕事が楽しいからです。もちろん仕事イコール人生ではありません。でも仕事は人生の大事な基盤のように思っています。<br />
+              株式会社STARTは、みなさんが仕事をきっかけに理想の人生を実現する手助けをしています。幸せにつながるお仕事紹介サービス
+              <a class="Message_Link" href="#">『スタート』</a
+              >や、共通の目標を目指す仲間が見つかる人材紹介SNS
+              <a class="Message_Link" href="#">『ゴール』</a
+              >を運営しています。また、Webデザインの基礎スキルを身につけられるスクール
+              <a class="Message_Link" href="#">『Webの学校』</a
+              >も随時開講しています。
+            </p>
+            <!-- /.CEO_Txt -->
+
+          <picture>
+            <source
+              srcset="resources/images/pc_office.jpg"
+              media="(min-width: 768px)"
+              width="1110"
+              height="400"
+              class="Office_Img"
+            />
+            <img
+              src="resources/images/sp_office.jpg"
+              alt="message_bg"
+              width="335"
+              height="260"
+              decoding="async"
+              loading="lazy"
+              class="Office_Img"
+            />
+          </picture>
+        </section>
+        <!-- /.CEO_Message -->
+      </div>
+    </main>
+    <footer class="Footer">
+      <div class="Footer_Inner">
+        <nav class="Footer_Nav">
+          <ul class="Footer_Nav__List">
+            <li class="Footer_Nav__Item">
+              <a href="news.html" class="Footer_Nav__Link">ホーム</a>
+            </li>
+            <li class="Footer_Nav__Item">
+              <a href="" class="Footer_Nav__Link">メッセージ</a>
+            </li>
+            <li class="Footer_Nav__Item">
+              <a href="" class="Footer_Nav__Link">会社概要</a>
+            </li>
+          </ul>
+        </nav>
+        <small class="Copyright">©START</small>
+      </div>
+    </footer>
+  </body>
+</html>

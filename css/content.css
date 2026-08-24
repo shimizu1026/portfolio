@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/* 共通設定
+----------------------- */
+html {
+    font-size: 100%;
+    letter-spacing: 0.05rem;
+}
+
+.wapper {
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    margin: 0 auto;
+}
+
+.work-title {
+    text-align: center;
+}
+
+.work-img {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.work-img img {
+    width: 100%;
+}
+
+span {
+    background: linear-gradient(transparent 70%, #CEA4EF 50%);
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+.contents__inner {
+    width: 60%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+
+.work-detail,
+.overview,
+.design-detail,
+.design-detail h2 {
+    margin-top: 50px;
+}
+
+.design-detail {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.design_pc img,
+.design_sp img {
+    width: 65%;
+}
+
+.design_box {
+    display: flex;
+    margin-top: 30px;
+
+}
+
+.nisa-img {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.design-detail_list {
+    margin: 30px 30px;
+}
+
+.contents__inner__kanpu {
+    display: flex;
+}
+
+.contens__inner__kanpu1,
+.contents__inner__kanpu__pc,
+.contens__inner__kanpu2 {
+    margin-right: 30px;
+}
+
+/* ----------------------- */
+@media(max-width: 435px) {
+    .wapper {
+        max-width: 365px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

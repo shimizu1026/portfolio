@@ -1,0 +1,200 @@
+
+.ContactForm {
+    padding: 70px 20px;
+    letter-spacing: 0.05em; 
+}
+
+@media screen and (max-width: 786px) {
+    .ContactForm {
+        padding: 37px 20px;
+    }
+}
+
+.ContactForm-Txt {
+    font-size: 16px;
+    line-height: 2;
+    text-align: center;
+}
+
+@media screen and (max-width: 786px) {
+    .ContactForm-Txt {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+.ContactForm-Inner{
+    max-width: 1110px;
+    margin: auto;;
+    background-color: #F7F7F7;
+    padding: 0 73px 0 30px;
+}
+
+.Form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 38px;
+    padding: 73px 0 90px 90px;
+}
+
+@media screen and (max-width: 786px) {
+    .Form {
+        align-items: flex-start;
+        padding: 30px 0;
+}
+}
+
+input {
+    appearance: revert;
+}
+
+input,
+textarea {
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #AAAAAA;
+    border-radius: 6px;
+}
+
+.C-Contents-Bottom input,
+textarea {
+    width: 50%;
+}
+
+@media screen and (max-width: 786px) {
+    .C-Contents-Bottom input,
+    textarea {
+        width: 100%;
+    }
+}
+
+.C-Contents-Bottom textarea {
+    width: 100%;
+}
+
+.C-Contents-Bottom .Tel-Box {
+    width: 30%;
+}
+
+@media screen and (max-width: 786px) {
+    .C-Contents-Bottom .Tel-Box {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 786px) {
+    .C-Contents-Top {
+        max-width: 275px;
+    }
+}
+
+.Radio-Contents {
+    display: flex;
+    column-gap: 50px;
+}
+
+
+@media screen and (max-width: 786px) {
+    .Radio-Contents {
+        flex-direction: column;
+        row-gap: 10px;
+        font-size: 13px;
+    }
+}
+
+.Required::after {
+    content: "※必須";
+    color: #391E88;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 2.25;
+    flex: none;
+}
+
+.C-Contents-Bottom {
+    max-width: 645px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 27px;
+}
+
+@media screen and (max-width: 786px) {
+    .C-Contents-Bottom {
+        max-width: 275px;
+        margin-top: 28px;
+    }
+}
+
+
+.Label {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 786px) {
+    .Label {
+        font-size: 15px;
+}
+}
+
+textarea {
+    height: 255px;
+}
+
+.Pulldown {
+    width: 50%;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #AAAAAA;
+    color: #333333;
+    font-size: 14px;
+    /* line-height: 7; */
+    letter-spacing: 0.05em;
+    padding: 10px 0 10px 30px;
+}
+
+@media screen and (max-width: 786px) {
+    .Pulldown {
+        width: 100%;
+    }
+}
+
+
+.Btn-Box {
+    display: flex;
+    justify-content: center;
+}
+
+.Submit-Btn {
+    width: 200px;
+    height: 60px;
+    background: linear-gradient(90deg,#7633A4, #250D65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 7;
+    letter-spacing: 0.05em;
+    margin-top: 45px;
+}
+
+@media screen and (max-width: 786px) {
+    .Submit-Btn {
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+}
+
+

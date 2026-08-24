@@ -1,0 +1,122 @@
+
+:root {
+    --font-family-noto: "Noto Sans JP", sans-serif;
+    --font-weight-noto-regular: 400;
+    --font-weight-noto-medium: 500;
+    --font-weight-noto-bold: 700;
+    --font-family-roboto: 'Roboto', sans-serif;
+    --font-weight-roboto-regular: 400;
+    --font-weight-roboto-medium: 500;
+    --font-weight-roboto-bold: 700;
+    --main-color: #DD1B57;
+    --base-color: #fff;
+    --font-color: #333333;
+    --gray-font-color: #F2F2F2;
+}
+
+.Main {
+    padding-top: 90px;
+    width: 100%;
+}
+
+
+.Message_Wrapper {
+    padding: 60px 20px 100px;
+    margin: 0 auto;
+    max-width: 1110px;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .Message_Wrapper {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+}
+
+.Message_Intro {
+    text-align: center;
+}
+
+.Message_Lead {
+    font-size:40px;
+    font-weight: var(--font-weight-noto-bold);
+    font-family: var(--font-family-noto);
+    color: var(--main-color);
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+    .Message_Lead {
+        font-size: 24px;
+    }
+}
+
+.Message_Intro p {
+    font-size: 18px;
+    font-weight: var(--font-weight-noto-medium);
+    font-family: var(--font-family-noto);
+    color: var(--font-color);
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .Message_Intro p {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+}
+
+.CEO_Img {
+    width: 100px;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .CEO_Img {
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+
+.CEO_Txt {
+    font-size:16px;
+    font-weight: var(--font-weight-noto-medium);
+    font-family: var(--font-family-noto);
+    color: var(--font-color);
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .CEO_Txt {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+}
+
+
+.Message_Link {
+    color: #349BF4;
+    text-decoration: underline;
+}
+
+.Office_Img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+    .Office_Img {
+        margin-top: 50px;
+    }
+}

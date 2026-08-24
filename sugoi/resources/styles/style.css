@@ -1,0 +1,80 @@
+
+:root {
+    --main-color:#292929;
+    --accent-color:#F27E1A;
+    --base-color:#FFFFFF;
+    --font-color:#222222;
+    --button-hover-color:#FFA252;
+    --font-family-jp:"Noto Sans JP", sans-serif;
+    --font-family-en:"Montserrat", sans-serif;
+    --rem-ratio: calc(1rem / var(--base-font-size));
+}
+
+body {
+    width: 100%;
+    color: var(--font-color);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.Header {
+    width: 100%;
+    height: 68px;
+    max-width: 960px;
+    margin-inline: auto;
+    background-color: var(--base-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo_Img {
+    width: 110px;
+    aspect-ratio: 110 / 20;
+}
+
+.Gnav_List {
+    display: flex;
+    gap: 54px;
+    font-family: var(--font-family-en);
+    font-weight: 600;
+}
+
+.Gnav_Item {
+    font-size: calc(20 * var(--rem-ratio));
+    line-height: 1.2;
+}
+
+.Gnav_Item:hover {
+    color: var(--accent-color);
+}
+
+.Gnav_Link {
+    padding: 22px 0;
+}
+
+.FV {
+    background-image: url(../images/FV.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 560px;
+}
+
+.Lead {
+    color: var(--base-color);
+    font-size: calc(68 * var(--rem-ratio));
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.Lead_Jp {
+    color: var(--base-color);
+    font-size: calc(20 * var(--rem-ratio));
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 2.6em;
+}

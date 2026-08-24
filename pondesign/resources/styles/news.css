@@ -1,0 +1,273 @@
+
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mb60 {
+    margin-bottom: 60px;
+}
+
+
+.Mr8 {
+    margin-right: 8px;
+}
+
+.Ml8 {
+    margin-left: 8px;
+}
+
+
+.Contents-Inner {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.Archives {
+    max-width: 750px;
+    color: #333333;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.Archives-Ttl {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 786px) {
+    .Archives-Ttl {
+        font-size: 22px;
+        line-height: 1.5;
+        margin-bottom: 48px; 
+    }
+}
+
+.Archives-Box {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 786px) {
+    .Archives-Box {
+        column-gap: 20px;
+        margin-bottom: 14px;
+    }
+}
+
+
+.Archives-Date {
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.Archives-Cat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 91px;
+    height: 22px;
+    border-radius: 50px;
+    background-color: #E8E8E8;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 3px 20px;
+    letter-spacing: 0.05em;
+}
+
+.Archives img {
+    aspect-ratio: 750/400;
+    margin-bottom: 30px;
+}
+
+.Archives-Text {
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 786px) {
+    .Archives-Text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+.Archives-Text h2 {
+    font-size: 24px;
+    letter-spacing: 0.18em;
+    margin-top: 82px;
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 786px) {
+    .Archives-Text h2 {
+        height: 18px;
+        font-size: 18px;
+        line-height: 1;
+    }
+}
+
+.Archives-Text h2::before {
+    width: 10px;
+    background-color: #391E88;
+    border-radius: 19px; /* 線幅の半分 */
+    content: "";
+    display: inline-block;
+    height: 38px; /* 線幅 */
+    margin-right: 20px;
+    vertical-align: bottom;
+}
+
+@media screen and (max-width: 786px) {
+    .Archives-Text h2::before {
+        width: 5px;
+        background-color: #391E88;
+        border-radius: 19px; /* 線幅の半分 */
+        content: "";
+        display: inline-block;
+        height: 24px; /* 線幅 */
+        margin-right: 17px;
+    }
+}
+
+.Archives-Text h3 {
+    font-size: 18px;
+    margin-top: 56px;
+    margin-bottom: 17px;
+    line-height: 1;
+    letter-spacing: 0.18em;
+}
+
+@media screen and (max-width: 786px) {
+    .Archives-Text h3 {
+        font-size: 16px;
+        line-height: 1.3;
+        margin-bottom: 17px;
+    }
+}
+
+.SNS-Container {
+    padding: 20px 0;
+}
+
+.SNS-List {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: 5px;
+    row-gap: 7px;
+}
+
+.SNS-List li {
+    text-align: center;
+}
+
+
+/* 自作のSNSアイコン */
+.container {
+    margin-bottom: 30px;
+}
+
+.sns-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sns-list li {
+    width: 19.44%;
+    text-align: center;
+  }
+  .sns-list li a {
+    color: #fff;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+  }
+  .sns-twitter {
+    background-color: #00acee;
+  }
+  .sns-fb {
+    background-color: #3b5998;
+  }
+  .sns-hatena {
+    background-color: #5d8ac1;
+  }
+  .sns-pocket {
+    background-color: #f03e51;
+  }
+  .sns-line {
+    background-color: #6cc655;
+}
+
+
+.Prev {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 45px;
+    justify-content: center;
+    color: #391E88;
+    border-top: 1px solid #B8AED5;
+    border-bottom: 1px solid #B8AED5;
+}
+
+@media screen and (max-width: 786px) {
+    .Prev {
+        width: 100%;
+        gap: 21px;
+    }
+}
+
+
+.Prev-Item {
+    border-right: #B8AED5;
+}
+
+.Prev-Item, .Next-Item {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 786px) {
+    .Prev-Item, .Next-Item {
+        text-align: left;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+
+.Center-Line {
+    height: 70px;
+    border-right: 1px solid #B8AED5;
+}
+
+.News-Top {
+    font-size: 14px;
+    color: #391E88;
+    line-height: 2.1;
+    letter-spacing: 0.08em;
+    text-align: center;
+    margin-top: 17px;
+    margin-bottom: 108px;
+}
+
+@media screen and (max-width: 786px) {
+    .News-Top {
+        margin-bottom: 78px;
+    }
+    
+}
+

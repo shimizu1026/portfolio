@@ -1,0 +1,142 @@
+
+
+.Mr8 {
+    margin-right: 8px;
+}
+
+.Ml8 {
+    margin-left: 8px;
+}
+
+.Contents-Inner {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.News {
+    max-width: 915px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.Archives-Ttl {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+}
+
+.News-List {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+
+.News-Item {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+@media screen and (max-width: 786px) {
+    .News-Item {
+        flex-wrap: wrap;
+    }
+}
+
+.News-Date {
+    width: 90px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.News-Cat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 91px;
+    height: 22px;
+    border-radius: 50px;
+    background-color: #E8E8E8;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 5px 20px;
+    letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 786px) {
+    .News-Cat {
+        width: 107px;
+        font-size: 11px;
+        padding: 2px 30px;
+    }
+}
+
+.News-Ttl {
+    flex: 1;/*２行のカテゴリーが小さくなるのを防ぐ*/
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.05em;
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 786px) {
+    .News-Ttl {
+        flex: auto;
+        font-size: 14px;
+        line-height: 1.7;
+        margin-top: 10px;
+    }
+}
+
+.Links {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 110px;
+}
+
+@media screen and (max-width: 786px) {
+    .Links {
+        margin-bottom: 40px;
+    }
+}
+
+.page-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient( 180deg, #7633A4, #250D65);
+    color: #fff;
+    border-radius: 50%;
+    background-color: #F1EBF8;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 0.35;
+    letter-spacing: 0.05em;
+}
+
+.current {
+    color: #4F31A5;
+    background: #F1EBF8;
+}
+
+.prev.page-numbers {
+    display: none;
+}
+
+.next.page-numbers {
+    display: none;
+}
+
+

@@ -1,0 +1,217 @@
+
+.Company {
+    margin-bottom: 110px;
+}
+
+.Company-Inner {
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(../images/company/bg-circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 35px;
+    margin-bottom: 56px;
+}
+
+.Company-Left {
+    flex: 1;
+    aspect-ratio: 306/416;
+}
+
+@media screen and (max-width: 1010px) {
+    .Company-Right,
+    .Company-Left {
+        display: none;
+}
+}
+
+.Company-Right {
+    flex: 1;
+    aspect-ratio: 306/416;
+}
+
+.Company-Message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 2.5;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.Message-Ttl {
+    color: #391E88;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 3;
+}
+
+@media screen and (max-width: 786px) {
+    .Message-Ttl {
+        font-size: 24px;
+    }
+}
+
+.Message-Copy {
+    font-size: 40px;
+    font-weight: 600;
+    text-decoration: underline; /* 下線 */
+    text-decoration-thickness: 12px; /* 線の太さ */
+    text-decoration-color: #F5F534; /* 線の色 */
+    text-underline-offset: -0.2em; /* 線の位置。テキストに重なるようにやや上部にする */
+    text-decoration-skip-ink: none; /* 下線と文字列が重なる部分でも下線が省略されない（線が途切れない） */
+    line-height: 1.25;
+}
+
+@media screen and (max-width: 786px) {
+    .Message-Copy {
+        font-size: 32px;
+        text-decoration-thickness: 8px;
+    }
+}
+
+.Message-Text {
+    font-size: 15px;
+    margin-top: 32px;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 786px) {
+    .Message-Text {
+        font-size: 14 px;
+        margin-top: 40px;
+    }
+}
+
+.CEO-Message-Unit {
+    display: flex;
+    column-gap: 50px;
+    margin-bottom: 133px;
+}
+
+@media screen and (max-width: 786px) {
+    .CEO-Message-Unit { 
+        flex-direction: column;
+        row-gap: 30px;
+        margin-bottom: 142px;
+    }
+}
+
+.CEO-Img {
+    object-fit: cover;
+    aspect-ratio: 445/330;
+}
+
+@media screen and (max-width: 786px) {
+    .CEO-Img {
+        aspect-ratio: 335/248;
+    }
+    
+}
+
+.CEO-Message {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 786px) {
+    .CEO-Message {
+        font-size: 14px;
+    }
+}
+
+.CEO-Message p {
+    margin-bottom: 35px;
+}
+
+@media screen and (max-width: 786px) {
+    .CEO-Message p {
+        margin-bottom: 30px;
+    }
+}
+
+.Company-Overview {
+    max-width: 1110px;
+    margin: auto;
+    text-align: center;
+    padding: 0 20px;
+    letter-spacing: 0.05em;
+}
+
+.Company-Overview-Ttl {
+    color: #391E88;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 56px;
+}
+
+.Company-Overview-List {
+    display: flex;
+    align-items: center;
+    column-gap: 96px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+@media screen and (max-width: 786px) {
+    .Company-Overview-List {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 6px;
+    }
+}
+
+.Company-Overview-Label,
+.Company-Overview-Description {
+    font-size: 15px;
+    padding: 30px;
+}
+
+@media screen and (max-width: 786px) {
+    .Company-Overview-Label,
+    .Company-Overview-Description {
+        font-size: 16px;
+        padding: 0;
+    }
+}    
+
+.Company-Overview-Label {
+    width: 15%;
+    text-align: left;
+    font-weight: 600;
+    padding-top: 17px;
+}
+
+@media screen and (max-width: 786px) {
+    .Company-Overview-Label {
+        width: 40%;
+    }
+}
+
+.Company-Overview-Description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 786px) {
+    .Company-Overview-Description {
+        padding-bottom: 20px;
+    }
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 1110/394;
+    margin-top: 60px;
+  }
+  
+@media screen and (max-width: 786px) {
+    iframe {
+        aspect-ratio: 335/240;
+      }
+}
+

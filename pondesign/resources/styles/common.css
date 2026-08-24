@@ -1,0 +1,506 @@
+@charset "utf-8";
+
+img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+body {
+    color: #333333;
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.Header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 65px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    z-index: 100;
+}
+
+/* スクロールして「scroll-navクラス」がついたときのヘッダーデザイン */
+header.scroll-nav {
+    /* 背景 */
+    background: #21054D;
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+
+
+.Logo {
+    width: 160px;
+    height: 17px;
+    margin-left: 30px;
+    flex: 1;
+}
+
+.Logo img {
+    width: 124px;
+    height: 22px;
+}
+
+@media screen and (max-width: 786px) {
+    .Logo img {
+        width: 124px;
+        height: 22px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+.Button {
+    display: block;
+    position: fixed;
+    top: 25;
+    right: 0;
+    z-index: 30;
+    height: 44px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+}
+@media screen and (max-width: 786px) {
+.Button-LineTop {
+    position: absolute;
+    top: 15px;
+    width: 34px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+}
+
+@media screen and (max-width: 786px) {
+.ButtonIsOpen .Button-LineTop { /* 子孫セレクタ */
+    transform: translateY(3.5px) rotate(45deg);
+  }
+}
+@media screen and (max-width: 786px) {
+.Button-LineMedium {
+    width: 34px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+}
+@media screen and (max-width: 786px) {
+.ButtonIsOpen .Button-LineMedium { /* 子孫セレクタ */
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 786px) {
+.Button-LineBottom {
+    position: absolute;
+    bottom: 15px;
+    width: 34px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+}
+@media screen and (max-width: 786px) {
+.ButtonIsOpen .Button-LineBottom { /* 子孫セレクタ */
+    transform: translateY(-9.5px) rotate(-45deg);
+  }
+}
+
+
+@media screen and (max-width: 786px) {
+.IsScrollAllowed {
+    overflow: hidden
+}
+}
+
+@media screen and (max-width: 786px) {
+    .Nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 20;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient( 180deg, #642390, #19074A);
+        transform: translateX(100%);
+        transition: all 0.3s; 
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .NavIsOpen {
+        transform: translateX(0);
+    }
+    }
+
+.Nav__List {
+    display: flex;
+    column-gap: 25px;
+    margin-right: 30px;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 2%;
+}
+
+@media screen and (max-width: 786px) {
+    .Nav__List {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+.Nav__Item {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 786px) {
+    .Nav__Item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 786px) {
+.Overlay {
+    display: block;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+}
+  /* 付け外し用 */
+@media screen and (max-width: 786px) {
+  .OverlayIsOpen {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.Current.Nav__Item  {
+    border-bottom: 1px solid #fff;
+    pointer-events: none;  /* リンクのhoverを無効に */
+}
+.Nav__Link {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+}
+.Nav__Link::after {
+    background-color: #fff;
+    bottom: -5px;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transition: .5s all;
+    width: 0;/*デフォルト状態ではボーダーを非表示*/
+}
+
+.Nav__Link:hover::after {
+    width: 100%;
+}
+
+.Top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/works/works-top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 240px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 786px) {
+    .Top {
+        background-image: url(../images/works/works-top-sp.jpg);
+        width: 100%;
+        height: 190px;
+    }
+}
+
+.Title-Box {
+    text-align: center;
+}
+
+.Title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 786px) {
+    .Title {
+        font-size: 30px;
+        line-height: 3.2;
+    }
+}
+
+.Subtitle {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 786px) {
+    .Subtitle {
+        font-size: 13px;
+    }
+    
+}
+
+.Breadcrumb ol {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 0;
+    padding: 15px 0 15px 11%;
+    background-color: #F7F7F7;
+}
+
+@media screen and (max-width: 786px) {
+    .Breadcrumb ol {
+        font-size: 11px;
+        padding: 5px 0 5px 20px;
+    }
+}
+
+.Breadcrumb li {
+    display: inline;
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 12px;
+    color: #391E88;
+}
+
+.Home {
+    color: #6B34A0;
+}
+
+.Breadcrumb li::after {
+    content: '>';
+    margin: 0 8px;
+}
+
+.Breadcrumb li:last-child::after {
+    content: '';
+}
+
+.Breadcrumb li a {
+    text-decoration: none;
+} 
+
+.Breadcrumb-List a:hover {
+    text-decoration: underline;
+}
+
+.Contact-Btn {
+    width: 220px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 786px) {
+    .Contact-Btn {
+        font-size: 15px;
+    }
+}
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F7F7;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+@media screen and (max-width: 786px) {
+    .Contact {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.Contact-Inner {
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Contact-Title {
+    text-align: center;
+    color: #391E88;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.18em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 786px) {
+    .Contact-Title {
+        font-size: 30px;
+        line-height: 1.2;
+        letter-spacing: 0.05em;
+    }
+}
+
+.Contact-Subtitle {
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    color: #391E88;
+}
+
+@media screen and (max-width: 786px) {
+    .Contact-Subtitle {
+        font-size: 13px;
+        margin-bottom: 26px;
+    }
+}
+
+
+.Contact-Text {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 786px) {
+    .Contact-Text {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+}
+
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    /* height: 173px; */
+    background-color: #120E19;
+    padding: 60px 0;
+}
+
+@media screen and (max-width: 786px) {
+    .Footer {
+        /* height: 183px; */
+        padding-bottom: 20px;
+    }
+    
+}
+
+.Sitemap {
+    width: 100%;
+}
+
+@media screen and (max-width: 786px) {
+    .Sitemap {
+        width: 90%;
+    }
+}
+
+.Sitemap__List {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 786px) {
+    .Sitemap__List {
+        flex-wrap: wrap;
+        justify-content: left;
+        row-gap: 20px;
+        column-gap: 20px;
+        font-size: 12px;
+        padding-bottom: 40px;
+        margin-left: 30px;
+    }
+}
+
+.Top-Btn {
+    display: flex;
+    justify-content: right;
+    padding-right: 3%;
+}
+
+@media screen and (max-width: 786px) {
+    .Top-Btn {
+        display: none;
+    }
+    
+}
+
+.Top-Btn a {
+    position: fixed;
+    right: 2%;
+    bottom: 6%;
+  }
+.Copyright {
+    text-align: center;
+}
+
+small {
+    font-size: 10px;
+    color: #A798B7;
+}
+
+.More-Btn {
+    width: 200px;
+    height: 60px;
+    background: linear-gradient(90deg,#7633A4, #250D65);
+    color: #fff;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.More-Btn a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+

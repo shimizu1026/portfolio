@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.009" y1="0.104" x2="0.99" y2="0.85" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff8008"/>
+      <stop offset="1" stop-color="#ffc837"/>
+    </linearGradient>
+  </defs>
+  <g id="グループ_581" data-name="グループ 581" transform="translate(-207 -3548)">
+    <rect id="長方形_83" data-name="長方形 83" width="70" height="70" rx="35" transform="translate(207 3548)" fill="url(#linear-gradient)"/>
+    <g id="Icon_feather-arrow-left" data-name="Icon feather-arrow-left" transform="translate(222.5 3565)">
+      <path id="パス_17070" data-name="パス 17070" d="M28.5,18H7.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="パス_17071" data-name="パス 17071" d="M18,28.5,7.5,18,18,7.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
