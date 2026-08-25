@@ -136,6 +136,12 @@ const openWorkDialog = (work) => {
     return;
   }
 
+  const category = normalizeCategory(work.category);
+  const isBanner = category === "banner";
+  const isWebsite = category === "website";
+
+  workDialog.classList.toggle("work-dialog--banner", isBanner);
+
   workDialogTitle.textContent = work.title ?? "";
   workDialogDescription.textContent = work.description ?? "";
   workDialogRole.textContent = formatTagsText(work.tags);
@@ -153,12 +159,26 @@ const openWorkDialog = (work) => {
   if (work.thumbnail?.url) {
     workDialogImage.src = work.thumbnail.url;
     workDialogImage.hidden = false;
+
+    if (work.thumbnail.width) {
+      workDialogImage.width = work.thumbnail.width;
+    } else {
+      workDialogImage.removeAttribute("width");
+    }
+
+    if (work.thumbnail.height) {
+      workDialogImage.height = work.thumbnail.height;
+    } else {
+      workDialogImage.removeAttribute("height");
+    }
   } else {
     workDialogImage.removeAttribute("src");
+    workDialogImage.removeAttribute("width");
+    workDialogImage.removeAttribute("height");
     workDialogImage.hidden = true;
   }
 
-  if (work.url) {
+  if (isWebsite && work.url) {
     workDialogLink.href = work.url;
     workDialogLink.hidden = false;
   } else {
