@@ -100,21 +100,7 @@
     grid-row: span 4;
     align-self: start;
     margin-block-end: 24px;
-  }
-
-  .article__link,
-  .article__trigger {
-    display: contents;
-  }
-
-  .article__trigger {
     cursor: pointer;
-    border: 0;
-    padding: 0;
-    background: transparent;
-    font: inherit;
-    color: inherit;
-    text-align: inherit;
   }
 }
 

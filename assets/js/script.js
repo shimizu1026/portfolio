@@ -24,6 +24,14 @@ const escapeHtml = (value) => {
     .replaceAll("'", "&#39;");
 };
 
+const formatUsedAi = (usedAi) => {
+  if (Array.isArray(usedAi)) {
+    return usedAi.join("・");
+  }
+
+  return String(usedAi ?? "").trim();
+};
+
 const formatTagsText = (tags) => {
   if (Array.isArray(tags)) {
     return tags.join("・");
@@ -94,23 +102,33 @@ const renderArticle = (work) => {
   const imageHeight = work.thumbnail?.height ?? 250;
 
   return `
-    <article class="article">
-      <button type="button" class="article__trigger" data-work-id="${escapeHtml(work.id)}">
-        <div class="article__media">
-          <img
-            src="${imageUrl}"
-            alt=""
-            class="article__image"
-            width="${imageWidth}"
-            height="${imageHeight}"
-          />
-        </div>
-        <h2 class="article__title">${title}</h2>
-        <p class="article__tags">${tags}</p>
-        <p class="article__year">${year}</p>
-      </button>
+    <article class="article" data-work-id="${escapeHtml(work.id)}">
+      <div class="article__media">
+        <img
+          src="${imageUrl}"
+          alt=""
+          class="article__image"
+          width="${imageWidth}"
+          height="${imageHeight}"
+        />
+      </div>
+      <h2 class="article__title">${title}</h2>
+      <p class="article__tags">${tags}</p>
+      <p class="article__year">${year}</p>
     </article>
   `;
+};
+
+const bindArticleTriggers = () => {
+  contentsEl?.querySelectorAll(".article[data-work-id]").forEach((article) => {
+    article.addEventListener("click", () => {
+      const work = worksById.get(article.dataset.workId);
+
+      if (work) {
+        openWorkDialog(work);
+      }
+    });
+  });
 };
 
 const openWorkDialog = (work) => {
@@ -122,7 +140,7 @@ const openWorkDialog = (work) => {
   workDialogDescription.textContent = work.description ?? "";
   workDialogRole.textContent = formatTagsText(work.tags);
 
-  const usedAi = String(work.usedAi ?? "").trim();
+  const usedAi = formatUsedAi(work.usedAi);
 
   if (usedAi) {
     workDialogAi.textContent = usedAi;
@@ -194,6 +212,7 @@ const renderWorks = (category = "all") => {
   }
 
   contentsEl.innerHTML = works.map(renderArticle).join("");
+  bindArticleTriggers();
 };
 
 const switchCategory = (category) => {
@@ -228,20 +247,6 @@ navLinks.forEach((link) => {
     event.preventDefault();
     switchCategory(link.dataset.category ?? "all");
   });
-});
-
-contentsEl?.addEventListener("click", (event) => {
-  const trigger = event.target.closest(".article__trigger");
-
-  if (!trigger) {
-    return;
-  }
-
-  const work = worksById.get(trigger.dataset.workId);
-
-  if (work) {
-    openWorkDialog(work);
-  }
 });
 
 workDialogClose?.addEventListener("click", closeWorkDialog);
