@@ -22,7 +22,13 @@ const formatTags = (tags) => {
   return escapeHtml(tags ?? "");
 };
 
-const normalizeCategory = (category) => String(category ?? "").trim().toLowerCase();
+const normalizeCategory = (category) => {
+  if (Array.isArray(category)) {
+    return String(category[0] ?? "").trim().toLowerCase();
+  }
+
+  return String(category ?? "").trim().toLowerCase();
+};
 
 const getInitialCategory = () => {
   const params = new URLSearchParams(window.location.search);
@@ -97,7 +103,12 @@ const fetchAllWorks = async () => {
     throw new Error("config.js に serviceDomain と apiKey を設定してください。");
   }
 
-  const endpoint = `https://${config.serviceDomain}.microcms.io/api/v1/works`;
+  const endpoint = new URL(
+    `https://${config.serviceDomain}.microcms.io/api/v1/works`
+  );
+  endpoint.searchParams.set("limit", "100");
+  endpoint.searchParams.set("orders", "-publishedAt");
+
   const response = await fetch(endpoint, {
     headers: {
       "X-MICROCMS-API-KEY": config.apiKey,
