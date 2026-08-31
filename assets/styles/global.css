@@ -307,4 +307,57 @@
   .footer__copyright {
     text-align: center;
   }
+
+  .about {
+    display: grid;
+    row-gap: 48px;
+    max-width: 640px;
+    line-height: 1.8;
+  }
+
+  .about__title {
+    font-size: var(--font-size-lg);
+    letter-spacing: var(--tracking-wide);
+  }
+
+  .about__list {
+    display: grid;
+    row-gap: 8px;
+    margin-block-start: 24px;
+  }
+
+  .about__item {
+    position: relative;
+    padding-inline-start: 1em;
+  }
+
+  .about__item::before {
+    content: "・";
+    position: absolute;
+    inset-inline-start: 0;
+  }
+
+  .about__position {
+    margin-block-start: 24px;
+  }
+
+  .about__position-label {
+    display: block;
+    font-weight: 700;
+  }
+
+  .about__tools {
+    display: grid;
+    row-gap: 16px;
+    margin-block-start: 24px;
+  }
+
+  .about__tool-name {
+    font-weight: 700;
+  }
+
+  .about__tool-desc {
+    margin-block-start: 4px;
+    font-size: var(--font-size-sm);
+  }
 }
