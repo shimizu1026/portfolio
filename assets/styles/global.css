@@ -77,6 +77,8 @@
 
   .footer {
     grid-column: 1 / -1;
+    padding-block: calc(40 * var(--to-rem));
+    text-align: center;
   }
 
   .contents {
@@ -302,10 +304,6 @@
     height: auto;
     max-height: 70vh;
     object-fit: contain;
-  }
-
-  .footer__copyright {
-    text-align: center;
   }
 
   .about {
