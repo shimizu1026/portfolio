@@ -329,8 +329,8 @@
     block-size: 1px;
     background: linear-gradient(
       to right,
-      var(--color-accent) 50%,
-      var(--color-blue) 50%
+      var(--color-accent) 30%,
+      var(--color-blue) 30%
     );
   }
 
