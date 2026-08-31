@@ -1,0 +1,67 @@
+---
+description: CSS/JSスタイル規約（BEM・data属性・詳細度）
+globs: **/*.{css,scss,js,html}
+alwaysApply: false
+---
+
+# CSS / JS スタイル規約
+
+## 基本方針
+
+- **CSS** は見た目、**JS** は状態切り替え用の `data-*` 属性で役割を分ける
+- スタイルは役割ごとに分類する（レイアウト / 見た目 / 状態 など）
+- **`!important` とインラインスタイル（`style=""` / `element.style`）は使わない**
+- **詳細度**（セレクタの強さ）は上げない。基本はクラス1つ、ネストや ID は避ける
+- **命名は BEM**（Block__Element--Modifier）
+
+## JS と CSS の分離
+
+```javascript
+// ❌ JS で見た目用クラスを付け替える
+menu.classList.add('is-open');
+
+// ✅ 状態は data 属性、見た目は CSS が担当
+menu.dataset.open = 'true';
+```
+
+```css
+/* ✅ data 属性で状態スタイル */
+.menu[data-open="true"] {
+  display: block;
+}
+```
+
+## BEM 命名
+
+```html
+<!-- Block__Element--Modifier -->
+<nav class="header__nav header__nav--active"></nav>
+```
+
+```css
+.card { }
+.card__title { }
+.card__title--highlight { }
+```
+
+## 詳細度を上げない
+
+```css
+/* ❌ 詳細度が高い */
+#header .nav ul li a { }
+
+/* ✅ クラス1つ */
+.nav__link { }
+```
+
+## スタイルの分類
+
+- **レイアウト**: `.layout-*` や `.grid-*`（配置・余白）
+- **コンポーネント**: BEM の Block（部品の見た目）
+- **状態**: `[data-*]` または `--modifier`（開閉・選択など）
+
+## 禁止・非推奨
+
+- `style=""` 属性、`element.style.xxx = ...`
+- `!important`
+- JS から CSS 用クラス（`.is-active` 等）の付け外し（状態は `data-*` に統一）
