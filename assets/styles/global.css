@@ -315,7 +315,7 @@
 
   .about__title {
     position: relative;
-    display: inline-block;
+    display: block;
     padding-block-end: calc(8 * var(--to-rem));
     font-size: var(--font-size-lg);
     letter-spacing: var(--tracking-wide);
@@ -327,15 +327,11 @@
     inset-inline: 0;
     inset-block-end: 0;
     block-size: 1px;
-    background-color: var(--about-title-color, var(--color-accent));
-  }
-
-  .about__section:nth-child(odd) {
-    --about-title-color: var(--color-accent);
-  }
-
-  .about__section:nth-child(even) {
-    --about-title-color: var(--color-blue);
+    background: linear-gradient(
+      to right,
+      var(--color-accent) 50%,
+      var(--color-blue) 50%
+    );
   }
 
   .about__profile {
