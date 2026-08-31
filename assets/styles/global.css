@@ -314,8 +314,32 @@
   }
 
   .about__title {
+    position: relative;
+    display: inline-block;
+    padding-block-end: calc(8 * var(--to-rem));
     font-size: var(--font-size-lg);
     letter-spacing: var(--tracking-wide);
+  }
+
+  .about__title::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    inset-block-end: 0;
+    block-size: 1px;
+    background-color: var(--about-title-color, var(--color-accent));
+  }
+
+  .about__section:nth-child(odd) {
+    --about-title-color: var(--color-accent);
+  }
+
+  .about__section:nth-child(even) {
+    --about-title-color: var(--color-blue);
+  }
+
+  .about__profile {
+    margin-block-start: 24px;
   }
 
   .about__list {
@@ -333,7 +357,14 @@
     content: "・";
     position: absolute;
     inset-inline-start: 0;
+  }
+
+  .about__item:nth-child(odd)::before {
     color: var(--color-accent);
+  }
+
+  .about__item:nth-child(even)::before {
+    color: var(--color-blue);
   }
 
   .about__position {
