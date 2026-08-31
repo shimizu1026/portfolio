@@ -333,6 +333,7 @@
     content: "・";
     position: absolute;
     inset-inline-start: 0;
+    color: var(--color-accent);
   }
 
   .about__position {
