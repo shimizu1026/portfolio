@@ -60,13 +60,9 @@
   }
 
   .header {
-    position: sticky;
-    inset-block-start: 0;
     align-self: start;
     width: var(--header-width);
     min-width: 0;
-    max-block-size: 100vh;
-    overflow-y: auto;
   }
 
   .main {
@@ -118,9 +114,17 @@
 
 @layer components {
   .header {
+    position: sticky;
+    inset-block-start: 0;
+    align-self: start;
+    width: var(--header-width);
+    min-width: 0;
+    max-block-size: 100dvh;
+    overflow-y: auto;
     padding-block-start: 40px;
     padding-block-end: 40px;
     background-color: #fff;
+    z-index: 10;
   }
 
   .main {

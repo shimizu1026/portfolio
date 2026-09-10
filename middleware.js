@@ -1,3 +1,5 @@
+import { next } from "@vercel/edge";
+
 export default function middleware(request) {
   const authHeader = request.headers.get("authorization");
 
@@ -14,11 +16,7 @@ export default function middleware(request) {
         user === process.env.BASIC_AUTH_USER &&
         password === process.env.BASIC_AUTH_PASSWORD
       ) {
-        return new Response(null, {
-          headers: {
-            "x-middleware-next": "1",
-          },
-        });
+        return next();
       }
     }
   }
@@ -27,6 +25,7 @@ export default function middleware(request) {
     status: 401,
     headers: {
       "WWW-Authenticate": 'Basic realm="Portfolio"',
+      "Cache-Control": "no-store",
     },
   });
 }
