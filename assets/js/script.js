@@ -180,7 +180,7 @@ const renderSelectOptions = (selectEl, values, selectedValue) => {
   }
 
   const options = [
-    `<option value="all">ALL</option>`,
+    `<option value="all">All</option>`,
     ...values.map(
       (value) =>
         `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`
