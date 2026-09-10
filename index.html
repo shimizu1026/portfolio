@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>しみずあきよ</title>
-    <link rel="stylesheet" href="assets/styles/global.css?v=8" />
+    <link rel="stylesheet" href="assets/styles/global.css?v=17" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,6 +32,29 @@
         </ul>
       </nav>
       <!-- /.nav -->
+      <form class="filters" id="js-filters" aria-label="作品の絞り込み">
+        <label class="filters__field">
+          <span class="filters__label">担当領域</span>
+          <select class="filters__select" id="js-filter-role" name="role">
+            <option value="all">すべて</option>
+          </select>
+        </label>
+        <label class="filters__field">
+          <span class="filters__label">制作年</span>
+          <select class="filters__select" id="js-filter-year" name="year">
+            <option value="all">すべて</option>
+          </select>
+        </label>
+        <label class="filters__field">
+          <span class="filters__label">使用AI</span>
+          <select class="filters__select" id="js-filter-ai" name="ai">
+            <option value="all">すべて</option>
+            <option value="with">あり</option>
+            <option value="without">なし</option>
+          </select>
+        </label>
+      </form>
+      <!-- /.filters -->
     </header>
     <!-- /.header -->
     <main class="main">
@@ -94,6 +117,6 @@
       </div>
     </dialog>
     <script src="assets/js/config.js?v=4"></script>
-    <script src="assets/js/script.js?v=7"></script>
+    <script src="assets/js/script.js?v=8"></script>
   </body>
 </html>

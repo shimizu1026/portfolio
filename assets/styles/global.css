@@ -60,8 +60,13 @@
   }
 
   .header {
+    position: sticky;
+    inset-block-start: 0;
+    align-self: start;
     width: var(--header-width);
     min-width: 0;
+    max-block-size: 100vh;
+    overflow-y: auto;
   }
 
   .main {
@@ -114,6 +119,8 @@
 @layer components {
   .header {
     padding-block-start: 40px;
+    padding-block-end: 40px;
+    background-color: #fff;
   }
 
   .main {
@@ -156,6 +163,32 @@
     transform: scaleX(1);
   }
 
+  .filters {
+    display: grid;
+    row-gap: calc(16 * var(--to-rem));
+    margin-block-start: calc(40 * var(--to-rem));
+  }
+
+  .filters__field {
+    display: grid;
+    row-gap: calc(8 * var(--to-rem));
+  }
+
+  .filters__label {
+    font-size: var(--font-size-sm);
+  }
+
+  .filters__select {
+    width: 100%;
+    max-width: calc(160 * var(--to-rem));
+    padding-block: calc(6 * var(--to-rem));
+    padding-inline: calc(8 * var(--to-rem));
+    border: 1px solid var(--color-primary);
+    border-radius: 0;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
   .article__media {
     grid-row: 1;
     position: relative;
@@ -186,15 +219,6 @@
     font-size: var(--font-size-sm);
   }
 
-  .article:nth-child(3n + 1),
-  .article:nth-child(3n) {
-    --article-hover-color: var(--color-accent-hover);
-  }
-
-  .article:nth-child(3n + 2) {
-    --article-hover-color: var(--color-blue-hover);
-  }
-
   .article__media::after {
     content: "";
     position: absolute;
@@ -206,7 +230,7 @@
 
   @media (hover: hover) {
     .article:hover .article__media::after {
-      background-color: var(--article-hover-color);
+      background-color: var(--color-accent-hover);
       opacity: 1;
     }
   }
@@ -327,11 +351,7 @@
     inset-inline: 0;
     inset-block-end: 0;
     block-size: 1px;
-    background: linear-gradient(
-      to right,
-      var(--color-accent) 30%,
-      var(--color-blue) 30%
-    );
+    background-color: var(--color-accent);
   }
 
   .about__profile {
