@@ -245,7 +245,7 @@
     max-height: 90vh;
     padding: 0;
     border: 0;
-    border-radius: 30px;
+    border-radius: 30px 0 0 0;
     overflow: hidden;
     background: #fff;
     color: var(--color-primary);
