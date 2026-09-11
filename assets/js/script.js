@@ -415,7 +415,9 @@ filterAiEl?.addEventListener("change", () => {
 workDialogClose?.addEventListener("click", closeWorkDialog);
 
 workDialog?.addEventListener("click", (event) => {
-  const rect = workDialog.getBoundingClientRect();
+  const panel = workDialog.querySelector(".work-dialog__panel");
+  const target = panel ?? workDialog;
+  const rect = target.getBoundingClientRect();
   const isInDialog =
     event.clientX >= rect.left &&
     event.clientX <= rect.right &&
